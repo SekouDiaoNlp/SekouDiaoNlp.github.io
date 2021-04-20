@@ -91,15 +91,21 @@ It will be placed in your current directory. Find detailed information [here](ht
 
 ## IT IS FINALLY TIME TO CODE 😎:
 
+You are now almost ready to code your awesome package. You just need to set up your development environment.
+
+### CREATE A NEW VIRTUAL ENVIRONMENT:
+
 You need to first create a python virtual environment that will contain your project and all
 its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.
 
 To create a new virtual environment:
 
     :::python
-    $ conda create --name myenv python=3.x
+    $ conda create --name myenv python=3.x <optional packages that you want pre-installed in this virtual environment>
 
 Where 'myenv' is the name of your virtual environment and replace 'python=3.x' by the python version you desire.
+
+You can also specify a list of packages that you want pre-installed in this virtual environment and conda will install them automatically.
 
 Once the virtual environment has been created, navigate to the root folder of your project and activate the new virtual environment:
 
@@ -111,19 +117,94 @@ Where 'myenv' is still the name of your virtual environment.
 Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that [here](https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html).
 
-## MANAGE DEPENDENCIES:
+### ACTIVATE DEVELOPER MODE:
+
+In order to develop your package you need to make it editable so that any changes you made to the code are immediately
+applied, and you can test and debug your code.
+
+To enable this feature, while still in the root folder of your project (and making sure that your virtual environment is active)
+type the following command:
+
+    :::python
+    $ pip install -e .
+
+### START DEVELOPING YOUR CODE:
+
+You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.
+
+You can specify the dependencies that your package needs to run in a file called requirements.txt.
+
+The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.
+
+You can find more information on the use of requirements files [here](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
+
+I **STRONGLY** advise you to write tests and run them regularly. I recommend using [pytest](https://pytest.org/) to run your tests.
+The dependency on pytest is specified in requirements_dev.txt as it is only used during development.
+
+You should put your tests in the 'test/' folder created by cookiecutter.
+
+### MANAGE DEPENDENCIES:
+
+In order to manage your dependencies I recommend to use [pip-upgrader](https://github.com/simion/pip-upgrader):
+It is a tool which allows you to automatically keep your dependencies up to date.
+
+First install the dependencies you specified by typing these commands:
+
+    :::python
+    $ pip install -r requirements.txt
+    $ pip install -r requirements_dev.txt
+
+During the course of your development you can make sure that your dependencies are up to date by running this command from time to time:
 
     :::python
     $ pip-upgrade requirements.txt requirements_dev.txt
-    $ pipenv install --site-packages -r requirements.txt
-    $ pipenv install --site-packages -r requirements_dev.txt --dev -e .
-    $ pipenv update -r requirements.txt
-    $ pipenv update -r requirements_dev.txt --dev -e .
 
-## BUILD PYTHON PACKAGE:
+This will check on PyPi if there are newer versions of your dependencies and update the requirements files with the latest versions.
+If it finds new version, you just need to reinstall your dependencies.
 
     :::python
-    $ bump2version patch --allow-dirty
+    $ pip install -r requirements.txt
+    $ pip install -r requirements_dev.txt
+
+After a while you will be ready to build and publish your package. That's great news!
+
+## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:
+
+I also **STRONGLY** advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.
+
+I recommend using [Sphinx](https://www.sphinx-doc.org/en/master/index.html) to autogenerate the documentation.
+You can install it by typing:
+
+    :::python
+    $ pip install Sphinx
+
+Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs folder
+of your project and running:
+
+    :::console
+    $ make html
+
+This will auto-generate an html version of your documentation.
+That's great but wouldn't it be better if your documentation was automatically uploaded to [readthedocs](https://readthedocs.org/) so that it is always available online?
+
+## BUILD THE PYTHON PACKAGE:
+
+I recommend using the tool [bump2version](https://pypi.org/project/bump2version/) to easily update the version number of your package.
+You can install it by typing:
+
+    :::python
+    $ pip install bump2version
+
+When you are ready to release a new version of your package, type:
+
+    :::python
+    $ bump2version <option>
+
+Where <option> can be either major, minor or patch depending on how you want to update the version number.
+
+
+
+    :::python
     $ python setup.py sdist bdist_wheel
     $ twine check dist/*
 
@@ -131,11 +212,6 @@ You can find a helpful guide on how to do that [here](https://setuptools.readthe
 
     :::python
     $ twine upload dist/*
-
-## GENERATE DOCUMENTATION AND GITHUB PAGE FROM THE DOCUMENTATION FOLDER:
-
-    :::console
-    $ make html
 
 ## CONDA-FORGE CONTRIBUTION:
 
