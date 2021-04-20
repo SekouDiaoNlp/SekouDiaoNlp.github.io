@@ -9,7 +9,7 @@ lang: en
 order: 002
 
 # An easy step-by-step guide to build and publish Python packages.  
-
+<br />
 
 So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.
 
@@ -20,10 +20,10 @@ However, the process of creating, building and publishing a python process might
 You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.
 
 In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.
-
+<br />
 
 ## INSTALL GIT AND CREATE A GITHUB ACCOUNT:  
-
+<br />
 
 [Git](https://git-scm.com/downloads) is a Source Control System and [GitHub](https://github.com/) is a collaborative platform which allows multiple developers to work
 on the same projects as well as sharing your code with the world.
@@ -31,9 +31,10 @@ on the same projects as well as sharing your code with the world.
 You can download and install [git](https://git-scm.com/downloads) by clicking on the link and follow the installation instructions.
 
 Create an account on [GitHub](https://github.com/) by clicking on the link.
+<br />
 
 ## INSTALL A PYTHON DISTRIBUTION:  
-
+<br />
 
 I recommend using the Python distribution created by Anaconda as this is a great Python distribution and provides
 pre-compiled packages for many python packages, especially scientific packages bundled with libraries written in C,
@@ -63,8 +64,10 @@ For faster installation of conda packages use [mamba](https://github.com/mamba-o
     :::python
     conda install mamba -n base -c conda-forge
 
-## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:  
+<br />
 
+## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:  
+<br />
 
 Install a tool called [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/index.html).
 This is a command-line utility that creates projects from a Python package project template.
@@ -92,14 +95,17 @@ You will be prompted to enter some project config values. (These are defined in 
 Then, Cookiecutter will generate a project from the template, using the values that you entered.
 It will be placed in your current directory. Find detailed information [here](https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html).
 
+<br />
 
 ## IT IS FINALLY TIME TO CODE 😎:  
-
+<br />
 
 You are now almost ready to code your awesome package. You just need to set up your development environment.
 
-### CREATE A NEW VIRTUAL ENVIRONMENT:  
+<br />
 
+### CREATE A NEW VIRTUAL ENVIRONMENT:  
+<br />
 
 You need to first create a python virtual environment that will contain your project and all
 its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.
@@ -123,8 +129,10 @@ Where 'myenv' is still the name of your virtual environment.
 Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that [here](https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html).
 
-### ACTIVATE DEVELOPER MODE:  
+<br />
 
+### ACTIVATE DEVELOPER MODE:  
+<br />
 
 In order to develop your package you need to make it editable so that any changes you made to the code are immediately
 applied, and you can test and debug your code.
@@ -135,8 +143,10 @@ type the following command:
     :::python
     pip install -e .
 
-### START DEVELOPING YOUR CODE:  
+<br />
 
+### START DEVELOPING YOUR CODE:  
+<br />
 
 You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.
 
@@ -151,8 +161,10 @@ The dependency on pytest is specified in requirements_dev.txt as it is only used
 
 You should put your tests in the 'test/' folder created by cookiecutter.
 
-### MANAGE DEPENDENCIES:  
+<br />
 
+### MANAGE DEPENDENCIES:  
+<br />
 
 In order to manage your dependencies I recommend to use [pip-upgrader](https://github.com/simion/pip-upgrader):
 It is a tool which allows you to automatically keep your dependencies up to date.
@@ -177,8 +189,10 @@ If it finds new version, you just need to reinstall your dependencies.
 
 After a while you will be ready to build and publish your package. That's great news!
 
-## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:  
+<br />
 
+## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:  
+<br />
 
 I also **STRONGLY** advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.
 
@@ -204,8 +218,10 @@ The documentation will be automatically available and always up to date at https
 
 You are now ready to build your package.
 
-## BUILD THE PYTHON PACKAGE:  
+<br />
 
+## BUILD THE PYTHON PACKAGE:  
+<br />
 
 I recommend using the tool [bump2version](https://pypi.org/project/bump2version/) to easily update the version number of your package.
 You can install it by typing:
@@ -230,8 +246,10 @@ The built packages will be placed in the dist/ folder of your project.
 
 Now It is time to distribute your package.
 
-## UPLOAD YOUR PYTHON PACKAGE:  
+<br />
 
+## UPLOAD YOUR PYTHON PACKAGE:  
+<br />
 
 You are ready to upload your package to [PyPi](https://pypi.org/) which is the official repository of Python packages.
 
@@ -268,8 +286,10 @@ This is great and now users can start to use your package!
 But if you want your package to be even more widely available and be able to be installed on all platforms even exotic ones,
 I advise you to also upload your package to [conda-forge](https://conda-forge.org/). This way your package will be also available on Anaconda.
 
-## CONDA-FORGE CONTRIBUTION:  
+<br />
 
+## CONDA-FORGE CONTRIBUTION:  
+<br />
 
 In order to upload your package to [conda-forge](https://conda-forge.org/) see <https://conda-forge.org/docs/maintainer/adding_pkgs.html> for more
 details.
@@ -300,8 +320,10 @@ You are now the maintainer of this repository.
 
 You can now update this repository, and the changes you make will be automatically updated to conda-forge.
 
-## CONDA-FORGE FEEDSTOCK MANAGEMENT:  
+<br />
 
+## CONDA-FORGE FEEDSTOCK MANAGEMENT:  
+<br />
 
 In order to efficiently manage your new package repository follow these instructions.
 
