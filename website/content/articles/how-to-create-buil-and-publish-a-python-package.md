@@ -219,10 +219,36 @@ The built packages will be placed in the dist/ folder of your project.
 
 Now It is time to distribute your package.
 
-## UPLOAD PYTHON PACKAGE:
+## UPLOAD YOUR PYTHON PACKAGE:
+
+You are ready to upload your package to [PyPi](https://pypi.org/) which is the official repository of Python packages.
+
+You must first [create an account on PyPi](https://pypi.org/account/register/) to be able to upload your package.
+
+The tool to upload your package is called [twine](https://twine.readthedocs.io/en/latest/). It is very easy to use.
+
+To install twine, type the following command:
+
+    :::python
+    $ pip install twine
+
+Once twine is installed, upload your package to PyPi by typing this command:
 
     :::python
     $ twine upload dist/*
+
+This command will ask you for the username and password of your Pypi account.
+
+You can alternatively create a file called [.pypirc](https://packaging.python.org/specifications/pypirc/) which contains
+your configuration and credentials and use this command to upload your package:
+
+    :::python
+    $ twine upload --config-file <path/to/your/.pypirc> dist/*
+
+Once uploaded to PyPi, your package will be able to be installed by people by simply typing:
+
+    :::python
+    $ pip install <your-package-name>
 
 ## CONDA-FORGE CONTRIBUTION:
 
