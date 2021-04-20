@@ -60,7 +60,7 @@ For faster installation of conda packages use [mamba](https://github.com/mamba-o
     :::python
     $ conda install mamba -n base -c conda-forge
 
-Next you will need to create the base folder structure of your project.
+## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:
 
 Install a tool called [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/index.html).
 This is a command-line utility that creates projects from a Python package project template.
@@ -81,12 +81,35 @@ project folder to this new repository.
 Then generate your project from the project template:
 
     :::python
-    $ cookiecutter <path/to/my/project>/
+    $ cookiecutter <path/to/my/project template>/
+
+You will be prompted to enter some project config values. (These are defined in the project’s cookiecutter.json.)
+
+Then, Cookiecutter will generate a project from the template, using the values that you entered.
+It will be placed in your current directory. Find detailed information [here](https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html).
+
+
+## IT IS FINALLY TIME TO CODE 😎:
+
+You need to first create a python virtual environment that will contain your project and all
+its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.
 
 To create a new virtual environment:
 
     :::python
-    $ conda create -n myenv python=3.x
+    $ conda create --name myenv python=3.x
+
+Where 'myenv' is the name of your virtual environment and replace 'python=3.x' by the python version you desire.
+
+Once the virtual environment has been created, navigate to the root folder of your project and activate the new virtual environment:
+
+    :::python
+    $ conda activate myenv
+
+Where 'myenv' is still the name of your virtual environment.
+
+Modify the files 'setup.cfg' and 'setup.py' according to your needs.
+You can find a helpful guide on how to do that [here](https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html).
 
 ## MANAGE DEPENDENCIES:
 
