@@ -77,7 +77,7 @@ Optionally add new remote:
     $ git fetch upstream
     $ git checkout -b <branch-name>
 
-"make changes locally to the recipe and commit the changes"
+make changes locally to the recipe and commit the changes:
 
     :::python
     $ conda smithy rerender -c auto
