@@ -1,10 +1,11 @@
-title: mlconjug3-presentation
+Title: mlconjug3-presentation
 Category: Python
 Tags: Python, Machine Learning, Natural Language processing, AI, Conjugation
 Slug: mlconjug3-presentation
 Author: SekouDiaoNlp
 Summary: Presentation of my NLP project mlconjug, a Python library for conjugating verbs in several languages.
 lang: en
+order: 001
 
 I am making this post to present to the world my Python library which has the best AI (as far as I know)
 capable of conjugating verbs in several languages.
