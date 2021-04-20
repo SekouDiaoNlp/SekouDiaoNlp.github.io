@@ -187,6 +187,9 @@ of your project and running:
 This will auto-generate an html version of your documentation.
 That's great but wouldn't it be better if your documentation was automatically uploaded to [readthedocs](https://readthedocs.org/) so that it is always available online?
 
+Create an account [readthedocs](https://readthedocs.org/) and [follow their instructions](https://docs.readthedocs.io/en/stable/intro/import-guide.html)
+on how to automatically upload your documentation to their site every time you release a new version of your package.
+
 ## BUILD THE PYTHON PACKAGE:
 
 I recommend using the tool [bump2version](https://pypi.org/project/bump2version/) to easily update the version number of your package.
