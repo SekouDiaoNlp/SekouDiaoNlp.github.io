@@ -1,5 +1,6 @@
 Title: mlconjug3-presentation
 Category: Python
+Date: 2021-04-19
 Tags: Python, Machine Learning, Natural Language processing, AI, Conjugation
 Slug: mlconjug3-presentation
 Author: SekouDiaoNlp
