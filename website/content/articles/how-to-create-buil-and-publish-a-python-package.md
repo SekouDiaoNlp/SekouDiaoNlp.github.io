@@ -2,7 +2,7 @@ Title: How to create build and publish a Python package
 Category: Python
 Date: 2021-04-20
 Tags: Python, Pypi, Anaconda, conda-forge
-Slug: mlconjug3-presentation
+Slug: How-to-create-build-and-publish-a-Python-package
 Author: SekouDiaoNlp
 Summary: A nifty tutorial about how to create build and publish a Python package.
 lang: en
