@@ -178,7 +178,7 @@ You can install it by typing:
     :::python
     $ pip install Sphinx
 
-Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs folder
+Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs/ folder
 of your project and running:
 
     :::console
@@ -189,6 +189,10 @@ That's great but wouldn't it be better if your documentation was automatically u
 
 Create an account [readthedocs](https://readthedocs.org/) and [follow their instructions](https://docs.readthedocs.io/en/stable/intro/import-guide.html)
 on how to automatically upload your documentation to their site every time you release a new version of your package.
+
+The documentation will be automatically available and always up to date at https://<your-package-name>.readthedocs.io/en/latest/index.html
+
+You are now ready to build your package.
 
 ## BUILD THE PYTHON PACKAGE:
 
