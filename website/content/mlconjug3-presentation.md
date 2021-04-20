@@ -1,4 +1,4 @@
-Title: mlconjug3-presentation
+Title: Presentation of the python package mlconjug3
 Category: Python
 Date: 2021-04-19
 Tags: Python, Machine Learning, Natural Language processing, AI, Conjugation
