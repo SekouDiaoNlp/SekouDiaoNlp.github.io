@@ -10,7 +10,7 @@ order: 002
 
 # An easy step-by-step guide to build and publish Python packages.
 
-MANAGE DEPENDENCIES:
+## MANAGE DEPENDENCIES:
 
     $ pip-upgrade requirements.txt requirements_dev.txt
     $ pipenv install --site-packages -r requirements.txt
@@ -18,21 +18,21 @@ MANAGE DEPENDENCIES:
     $ pipenv update -r requirements.txt
     $ pipenv update -r requirements_dev.txt --dev -e .
 
-BUILD PYTHON PACKAGE:
+## BUILD PYTHON PACKAGE:
 
     $ bump2version patch --allow-dirty
     $ python setup.py sdist bdist_wheel
     $ twine check dist/*
 
-UPLOAD PYTHON PACKAGE:
+## UPLOAD PYTHON PACKAGE:
 
     $ twine upload dist/*
 
-GENERATE DOCUMENTATION AND GITHUB PAGE FROM THE DOCUMENTATION FOLDER:
+## GENERATE DOCUMENTATION AND GITHUB PAGE FROM THE DOCUMENTATION FOLDER:
 
     $ make html
 
-ANACONDA:
+## ANACONDA:
 
 To create a new virtual environment:
 
@@ -43,7 +43,7 @@ For faster installation of conda packages use mamba instead of conda:
     $ conda install mamba -n base -c conda-forge
     $ mamba install <packages>
 
-CONDA-FORGE CONTRIBUTION:
+## CONDA-FORGE CONTRIBUTION:
 
 (see <https://conda-forge.org/docs/maintainer/adding_pkgs.html> for more
 details)
@@ -60,7 +60,7 @@ Edit the file meta.yaml with the relevant information Create a Pull
 Request to upload the recipe After the Pull Request is merged, a new
 repository is created at [https://github.com/conda-forge/\\]
 
-CONDA-FORGE FEEDSTOCK MANAGEMENT:
+## CONDA-FORGE FEEDSTOCK MANAGEMENT:
 
 Optionally add new remote:
 
