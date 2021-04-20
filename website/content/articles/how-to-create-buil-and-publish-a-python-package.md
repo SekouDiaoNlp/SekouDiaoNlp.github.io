@@ -250,27 +250,48 @@ Once uploaded to PyPi, your package will be able to be installed by people by si
     :::python
     $ pip install <your-package-name>
 
+You have now successfully uploaded your package to Pypi.
+This is great and now users can start to use your package!
+
+But if you want your package to be even more widely available and be able to be installed on all platforms even exotic ones,
+I advise you to also upload your package to [conda-forge](https://conda-forge.org/). This way your package will be also available on Anaconda.
+
 ## CONDA-FORGE CONTRIBUTION:
 
-(see <https://conda-forge.org/docs/maintainer/adding_pkgs.html> for more
-details)
+In order to upload your package to [conda-forge](https://conda-forge.org/) see <https://conda-forge.org/docs/maintainer/adding_pkgs.html> for more
+details.
+
+I will give a quick rundown of how to achieve this:
 
 Fork <https://github.com/conda-forge/staged-recipes/tree/master/recipes>
-Create a new branch from the staged-recipes master branch Generate a new
-folder with &lt;your\_package\_name&gt; in the recipes subdirectory
-Generate the recipe with the following command:
+
+Create a new branch from the staged-recipes master branch.
+
+Generate a new folder with &lt;your\_package\_name&gt; in the recipes subdirectory.
+
+Generate the recipe for your package with the following command:
 
     :::python
     $ mamba install grayskull
     $ grayskull pypi <your_package_name>
 
-Edit the file meta.yaml with the relevant information Create a Pull
-Request to upload the recipe After the Pull Request is merged, a new
-repository is created at [https://github.com/conda-forge/\\]
+This will grab the latest version of your package from PyPi and auto-generate the recipe to create a conda package.
+
+Edit the file meta.yaml with the relevant information.
+
+Create a Pull Request to upload the recipe.
+
+After the Pull Request is merged, a new repository with your package is created at [https://github.com/conda-forge/\\]
+
+You are now the maintainer of this repository.
+
+You can now update this repository, and the changes you make will be automatically updated to conda-forge.
 
 ## CONDA-FORGE FEEDSTOCK MANAGEMENT:
 
-Optionally add new remote:
+In order to efficiently manage your new package repository follow these instructions.
+
+Optionally add a new remote:
 
     :::console
     $ git checkout master
@@ -278,14 +299,21 @@ Optionally add new remote:
     $ git fetch upstream
     $ git checkout -b <branch-name>
 
-make changes locally to the recipe and commit the changes:
+Where <feedstock> is your package name <branch-name> is a new git branch where you will make your changes.
+
+Make changes locally to the recipe and commit the changes:
 
     :::python
     $ conda smithy rerender -c auto
+
+    :::console
     $ git push origin <branch-name>
 
-Create a Pull Request on [https://github.com/SekouDiaoNlp/\\] Merge the
-Pull Request after all tests are successful
+Create a Pull Request on [https://github.com/<feedstock>/\\].
+
+Merge the Pull Request after all tests are successful.
+
+Your package is now available at [https://anaconda.org/conda-forge/your-package-name\\].
 
   [https://github.com/conda-forge/\\]: https://github.com/conda-forge/\
   [https://github.com/SekouDiaoNlp/\\]: https://github.com/SekouDiaoNlp/\
