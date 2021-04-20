@@ -37,7 +37,7 @@ pre-compiled packages for many python packages, especially scientific packages b
 C++, Fortran, Go, etc...
 
 It is really easy to use and by using Anaconda you don't need to have compilers installed on your computer,
-which can be a big hassle especially on Windows systems.
+which can be a big hassle especially on Windows systems, or more exotic architectures with ARM, PowerPC or AArch64 processors.
 
 The Anaconda distributions comes in 2 flavors:
 
@@ -205,11 +205,15 @@ When you are ready to release a new version of your package, type:
 
 Where <option> can be either major, minor or patch depending on how you want to update the version number.
 
-
+Once you bumped the version number, it is time to build your package.
+Run the following command to build your package. This will create both a source distribution and a binary distribution.
 
     :::python
     $ python setup.py sdist bdist_wheel
-    $ twine check dist/*
+
+The built packages will be placed in the dist/ folder of your project.
+
+Now It is time to distribute your package.
 
 ## UPLOAD PYTHON PACKAGE:
 
