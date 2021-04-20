@@ -21,6 +21,7 @@ You can find the information about how to achieve this on the interwebz, but it 
 
 In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.
 <br />
+<br />
 
 ## INSTALL GIT AND CREATE A GITHUB ACCOUNT:  
 <br />
@@ -31,6 +32,7 @@ on the same projects as well as sharing your code with the world.
 You can download and install [git](https://git-scm.com/downloads) by clicking on the link and follow the installation instructions.
 
 Create an account on [GitHub](https://github.com/) by clicking on the link.
+<br />
 <br />
 
 ## INSTALL A PYTHON DISTRIBUTION:  
@@ -65,6 +67,7 @@ For faster installation of conda packages use [mamba](https://github.com/mamba-o
     conda install mamba -n base -c conda-forge
 
 <br />
+<br />
 
 ## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:  
 <br />
@@ -96,12 +99,14 @@ Then, Cookiecutter will generate a project from the template, using the values t
 It will be placed in your current directory. Find detailed information [here](https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html).
 
 <br />
+<br />
 
 ## IT IS FINALLY TIME TO CODE 😎:  
 <br />
 
 You are now almost ready to code your awesome package. You just need to set up your development environment.
 
+<br />
 <br />
 
 ### CREATE A NEW VIRTUAL ENVIRONMENT:  
@@ -130,6 +135,7 @@ Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that [here](https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html).
 
 <br />
+<br />
 
 ### ACTIVATE DEVELOPER MODE:  
 <br />
@@ -143,6 +149,7 @@ type the following command:
     :::python
     pip install -e .
 
+<br />
 <br />
 
 ### START DEVELOPING YOUR CODE:  
@@ -161,6 +168,7 @@ The dependency on pytest is specified in requirements_dev.txt as it is only used
 
 You should put your tests in the 'test/' folder created by cookiecutter.
 
+<br />
 <br />
 
 ### MANAGE DEPENDENCIES:  
@@ -189,6 +197,7 @@ If it finds new version, you just need to reinstall your dependencies.
 
 After a while you will be ready to build and publish your package. That's great news!
 
+<br />
 <br />
 
 ## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:  
@@ -219,6 +228,7 @@ The documentation will be automatically available and always up to date at https
 You are now ready to build your package.
 
 <br />
+<br />
 
 ## BUILD THE PYTHON PACKAGE:  
 <br />
@@ -246,6 +256,7 @@ The built packages will be placed in the dist/ folder of your project.
 
 Now It is time to distribute your package.
 
+<br />
 <br />
 
 ## UPLOAD YOUR PYTHON PACKAGE:  
@@ -287,6 +298,7 @@ But if you want your package to be even more widely available and be able to be 
 I advise you to also upload your package to [conda-forge](https://conda-forge.org/). This way your package will be also available on Anaconda.
 
 <br />
+<br />
 
 ## CONDA-FORGE CONTRIBUTION:  
 <br />
@@ -320,6 +332,7 @@ You are now the maintainer of this repository.
 
 You can now update this repository, and the changes you make will be automatically updated to conda-forge.
 
+<br />
 <br />
 
 ## CONDA-FORGE FEEDSTOCK MANAGEMENT:  
