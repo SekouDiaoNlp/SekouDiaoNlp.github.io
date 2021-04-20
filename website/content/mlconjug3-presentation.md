@@ -10,6 +10,7 @@ order: 001
 
 I am making this post to present to the world my Python library which has the best AI (as far as I know)
 capable of conjugating verbs in several languages.
+
 You can find below a summary of what it can achieve.
 
 # MLCONJUG3
