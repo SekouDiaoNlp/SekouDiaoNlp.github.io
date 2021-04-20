@@ -8,7 +8,8 @@ order: 001
 
 I am a Natural Language Processing and AI specialist.
 
-I studied Computer Science and Natural Language Processing at the University of Bordeaux.
+I studied Computer Science and Natural Language Processing at the University of Bordeaux,
+where I focused my academic interests in the Theoretical Linguistics field of Syntax called [Lexical Functional Grammar](https://scholar.google.fr/scholar?q=lexical+functional+grammar&hl=fr&as_sdt=0&as_vis=1&oi=scholart).
 
 I am the author of multiple Open Source Python projects, notably mlconjug3,
 
