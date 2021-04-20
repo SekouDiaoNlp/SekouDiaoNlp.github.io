@@ -29,5 +29,7 @@ SOCIAL = (('Gravatar Profile', 'https://fr.gravatar.com/sekoudiaonlp'),
 
 DEFAULT_PAGINATION = 10
 
+THEME = 'C:/Users/user/Documents/Pelican_Themes/bootstrap2'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
