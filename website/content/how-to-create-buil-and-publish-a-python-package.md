@@ -10,6 +10,19 @@ order: 002
 
 # An easy step-by-step guide to build and publish Python packages.
 
+## ANACONDA:
+
+To create a new virtual environment:
+
+    :::python
+    $ conda create -n myenv python=3.x
+
+For faster installation of conda packages use mamba instead of conda:
+
+    :::python
+    $ conda install mamba -n base -c conda-forge
+    $ mamba install <packages>
+
 ## MANAGE DEPENDENCIES:
 
     :::python
@@ -35,19 +48,6 @@ order: 002
 
     :::console
     $ make html
-
-## ANACONDA:
-
-To create a new virtual environment:
-
-    :::python
-    $ conda create -n myenv python=3.x
-
-For faster installation of conda packages use mamba instead of conda:
-
-    :::python
-    $ conda install mamba -n base -c conda-forge
-    $ mamba install <packages>
 
 ## CONDA-FORGE CONTRIBUTION:
 
