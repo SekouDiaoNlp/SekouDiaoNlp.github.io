@@ -7,13 +7,13 @@
 &lt;p&gt;You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.&lt;/p&gt;
 &lt;p&gt;In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="install-git-and-create-a-github-account"&gt;INSTALL GIT AND CREATE A GITHUB ACCOUNT:&lt;/h2&gt;
+&lt;h2 id="install-git-and-create-a-github-account"&gt;INSTALL GIT AND CREATE A GITHUB ACCOUNT&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://git-scm.com/downloads"&gt;Git&lt;/a&gt; is a Source Control System and &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; is a collaborative platform which allows multiple developers to work
 on the same projects as well as sharing your code with the world.&lt;/p&gt;
 &lt;p&gt;You can download and install &lt;a href="https://git-scm.com/downloads"&gt;git&lt;/a&gt; by clicking on the link and follow the installation instructions.&lt;/p&gt;
 &lt;p&gt;Create an account on &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; by clicking on the link.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="install-a-python-distribution"&gt;INSTALL A PYTHON DISTRIBUTION:&lt;/h2&gt;
+&lt;h2 id="install-a-python-distribution"&gt;INSTALL A PYTHON DISTRIBUTION&lt;/h2&gt;
 &lt;p&gt;I recommend using the Python distribution created by Anaconda as this is a great Python distribution and provides
 pre-compiled packages for many python packages, especially scientific packages bundled with libraries written in C,
 C++, Fortran, Go, etc...&lt;/p&gt;
@@ -40,7 +40,7 @@ their website.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mamba&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="n"&gt;conda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;forge&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="create-the-base-folder-structure-of-your-project"&gt;CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:&lt;/h2&gt;
+&lt;h2 id="create-the-base-folder-structure-of-your-project"&gt;CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT&lt;/h2&gt;
 &lt;p&gt;Install a tool called &lt;a href="https://cookiecutter.readthedocs.io/en/1.7.2/index.html"&gt;cookiecutter&lt;/a&gt;.
 This is a command-line utility that creates projects from a Python package project template.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mamba&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;cookiecutter&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;
@@ -58,10 +58,10 @@ project folder to this new repository.&lt;/p&gt;
 &lt;p&gt;Then, Cookiecutter will generate a project from the template, using the values that you entered.
 It will be placed in your current directory. Find detailed information &lt;a href="https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="it-is-finally-time-to-code"&gt;IT IS FINALLY TIME TO CODE 😎:&lt;/h2&gt;
+&lt;h2 id="it-is-finally-time-to-code"&gt;IT IS FINALLY TIME TO CODE 😎&lt;/h2&gt;
 &lt;p&gt;You are now almost ready to code your awesome package. You just need to set up your development environment.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h3 id="create-a-new-virtual-environment"&gt;CREATE A NEW VIRTUAL ENVIRONMENT:&lt;/h3&gt;
+&lt;h3 id="create-a-new-virtual-environment"&gt;CREATE A NEW VIRTUAL ENVIRONMENT&lt;/h3&gt;
 &lt;p&gt;You need to first create a python virtual environment that will contain your project and all
 its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.&lt;/p&gt;
 &lt;p&gt;To create a new virtual environment:&lt;/p&gt;
@@ -76,7 +76,7 @@ its dependencies. This will prevent your needed dependencies to interfere with t
 &lt;p&gt;Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that &lt;a href="https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h3 id="activate-developer-mode"&gt;ACTIVATE DEVELOPER MODE:&lt;/h3&gt;
+&lt;h3 id="activate-developer-mode"&gt;ACTIVATE DEVELOPER MODE&lt;/h3&gt;
 &lt;p&gt;In order to develop your package you need to make it editable so that any changes you made to the code are immediately
 applied, and you can test and debug your code.&lt;/p&gt;
 &lt;p&gt;To enable this feature, while still in the root folder of your project (and making sure that your virtual environment is active)
@@ -84,7 +84,7 @@ type the following command:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h3 id="start-developing-your-code"&gt;START DEVELOPING YOUR CODE:&lt;/h3&gt;
+&lt;h3 id="start-developing-your-code"&gt;START DEVELOPING YOUR CODE&lt;/h3&gt;
 &lt;p&gt;You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.&lt;/p&gt;
 &lt;p&gt;You can specify the dependencies that your package needs to run in a file called requirements.txt.&lt;/p&gt;
 &lt;p&gt;The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.&lt;/p&gt;
@@ -93,7 +93,7 @@ type the following command:&lt;/p&gt;
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.&lt;/p&gt;
 &lt;p&gt;You should put your tests in the 'test/' folder created by cookiecutter.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h3 id="manage-dependencies"&gt;MANAGE DEPENDENCIES:&lt;/h3&gt;
+&lt;h3 id="manage-dependencies"&gt;MANAGE DEPENDENCIES&lt;/h3&gt;
 &lt;p&gt;In order to manage your dependencies I recommend to use &lt;a href="https://github.com/simion/pip-upgrader"&gt;pip-upgrader&lt;/a&gt;:
 It is a tool which allows you to automatically keep your dependencies up to date.&lt;/p&gt;
 &lt;p&gt;Install pip-upgrader by typing:&lt;/p&gt;
@@ -113,7 +113,7 @@ If it finds new version, you just need to reinstall your dependencies.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;After a while you will be ready to build and publish your package. That's great news!&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="generate-documentation-from-the-documentation-folder"&gt;GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:&lt;/h2&gt;
+&lt;h2 id="generate-documentation-from-the-documentation-folder"&gt;GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER&lt;/h2&gt;
 &lt;p&gt;I also &lt;strong&gt;STRONGLY&lt;/strong&gt; advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.&lt;/p&gt;
 &lt;p&gt;I recommend using &lt;a href="https://www.sphinx-doc.org/en/master/index.html"&gt;Sphinx&lt;/a&gt; to autogenerate the documentation.
 You can install it by typing:&lt;/p&gt;
@@ -130,7 +130,7 @@ on how to automatically upload your documentation to their site every time you r
 &lt;p&gt;The documentation will be automatically available and always up to date at https://your-package-name.readthedocs.io/en/latest/index.html&lt;/p&gt;
 &lt;p&gt;You are now ready to build your package.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="build-the-python-package"&gt;BUILD THE PYTHON PACKAGE:&lt;/h2&gt;
+&lt;h2 id="build-the-python-package"&gt;BUILD THE PYTHON PACKAGE&lt;/h2&gt;
 &lt;p&gt;I recommend using the tool &lt;a href="https://pypi.org/project/bump2version/"&gt;bump2version&lt;/a&gt; to easily update the version number of your package.
 You can install it by typing:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;bump2version&lt;/span&gt;
@@ -146,7 +146,7 @@ Run the following command to build your package. This will create both a source 
 &lt;p&gt;The built packages will be placed in the dist/ folder of your project.&lt;/p&gt;
 &lt;p&gt;Now It is time to distribute your package.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="upload-your-python-package"&gt;UPLOAD YOUR PYTHON PACKAGE:&lt;/h2&gt;
+&lt;h2 id="upload-your-python-package"&gt;UPLOAD YOUR PYTHON PACKAGE&lt;/h2&gt;
 &lt;p&gt;You are ready to upload your package to &lt;a href="https://pypi.org/"&gt;PyPi&lt;/a&gt; which is the official repository of Python packages.&lt;/p&gt;
 &lt;p&gt;You must first &lt;a href="https://pypi.org/account/register/"&gt;create an account on PyPi&lt;/a&gt; to be able to upload your package.&lt;/p&gt;
 &lt;p&gt;The tool to upload your package is called &lt;a href="https://twine.readthedocs.io/en/latest/"&gt;twine&lt;/a&gt;. It is very easy to use.&lt;/p&gt;
@@ -169,7 +169,7 @@ This is great and now users can start to use your package!&lt;/p&gt;
 &lt;p&gt;But if you want your package to be even more widely available and be able to be installed on all platforms even exotic ones,
 I advise you to also upload your package to &lt;a href="https://conda-forge.org/"&gt;conda-forge&lt;/a&gt;. This way your package will be also available on Anaconda.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="conda-forge-contribution"&gt;CONDA-FORGE CONTRIBUTION:&lt;/h2&gt;
+&lt;h2 id="conda-forge-contribution"&gt;CONDA-FORGE CONTRIBUTION&lt;/h2&gt;
 &lt;p&gt;In order to upload your package to &lt;a href="https://conda-forge.org/"&gt;conda-forge&lt;/a&gt; see &lt;a href="https://conda-forge.org/docs/maintainer/adding_pkgs.html"&gt;https://conda-forge.org/docs/maintainer/adding_pkgs.html&lt;/a&gt; for more
 details.&lt;/p&gt;
 &lt;p&gt;I will give a quick rundown of how to achieve this:&lt;/p&gt;
@@ -187,7 +187,7 @@ details.&lt;/p&gt;
 &lt;p&gt;You are now the maintainer of this repository.&lt;/p&gt;
 &lt;p&gt;You can now update this repository, and the changes you make will be automatically updated to conda-forge.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="conda-forge-feedstock-management"&gt;CONDA-FORGE FEEDSTOCK MANAGEMENT:&lt;/h2&gt;
+&lt;h2 id="conda-forge-feedstock-management"&gt;CONDA-FORGE FEEDSTOCK MANAGEMENT&lt;/h2&gt;
 &lt;p&gt;In order to efficiently manage your new package repository follow these instructions.&lt;/p&gt;
 &lt;p&gt;Optionally add a new remote:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git checkout master
@@ -206,7 +206,7 @@ git checkout -b &amp;lt;branch-name&amp;gt;
 &lt;p&gt;Merge the Pull Request after all tests are successful.&lt;/p&gt;
 &lt;p&gt;Your package is now available at &lt;a href="https://anaconda.org/conda-forge/your-package-name\"&gt;https://anaconda.org/conda-forge/your-package-name\&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="conclusions"&gt;CONCLUSIONS:&lt;/h2&gt;
+&lt;h2 id="conclusions"&gt;CONCLUSIONS&lt;/h2&gt;
 &lt;p&gt;You are now the proud creator and maintainer of a python package which can be used by almost anybody either through PyPi
  or through conda-forge.&lt;/p&gt;
 &lt;p&gt;However, as you could gather by reading through this tutorial, there are many steps involved in creating, building and releasing a Python package to a large audience,
@@ -239,8 +239,12 @@ It will also save a &lt;strong&gt;loads of time&lt;/strong&gt; while maintaining
 or to fix bugs.&lt;/p&gt;
 &lt;p&gt;I hope I have whet your appetite for the next article in this series about Python packaging and distribution
 and that you enjoyed this article.&lt;/p&gt;
-&lt;p&gt;Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions.
-Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.&lt;/p&gt;
+&lt;p&gt;Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions,
+as it is hard to gauge how much or how little details I should provide given tht I have a lot of experience in packaging and
+distributing python packages, I tend to forget how frustrating it was the first time.&lt;/p&gt;
+&lt;p&gt;This is the reason I wrote this tutorial, to collate in a single place the many resources a first timer would have to dig through
+in order to distribute their first Python package.&lt;/p&gt;
+&lt;p&gt;Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://sekoudiaonlp.github.io/"&gt;SekouDiaoNlp&lt;/a&gt;.&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Pypi"></category><category term="Anaconda"></category><category term="conda-forge"></category></entry><entry><title>Presentation of the python package mlconjug3</title><link href="/mlconjug3-presentation.html" rel="alternate"></link><published>2021-04-19T00:00:00+02:00</published><updated>2021-04-19T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-19:/mlconjug3-presentation.html</id><summary type="html">&lt;p&gt;Presentation of my NLP project mlconjug, a Python library for conjugating verbs in several languages.&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;I am making this post to present to the world my Python library which has the best AI (as far as I know)
@@ -269,7 +273,7 @@ algorithms.&lt;/p&gt;
 &lt;p&gt;Users of the library can use any compatible classifiers from
 scikit-learn to modify and retrain the models.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="academic-publications-citing-mlconjug"&gt;Academic publications citing mlconjug:&lt;/h2&gt;
+&lt;h2 id="academic-publications-citing-mlconjug3"&gt;Academic publications citing mlconjug3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
     Mitchell and Noah D. Goodman and Chris Piech.&lt;br/&gt;
@@ -277,7 +281,7 @@ scikit-learn to modify and retrain the models.&lt;/p&gt;
     Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="software-projects-using-mlconjug"&gt;Software projects using mlconjug:&lt;/h2&gt;
+&lt;h2 id="software-projects-using-mlconjug3"&gt;Software projects using mlconjug3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/GesaJo/Gender-Bias-Visualization"&gt;Gender Bias Visualization&lt;/a&gt;
@@ -327,13 +331,14 @@ scikit-learn to modify and retrain the models.&lt;/p&gt;
     game&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="bibtex-citation"&gt;BibTeX citation:&lt;/h2&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="bibtex-citation"&gt;BibTeX citation&lt;/h2&gt;
 &lt;p&gt;If you want to cite mlconjug3 in an academic publication use this
 citation format:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nc"&gt;@article&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;mlconjug3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
       &lt;span class="na"&gt;title&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{mlconjug3}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
       &lt;span class="na"&gt;author&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{Sekou Diao}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
       &lt;span class="na"&gt;journal&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
-      &lt;span class="na"&gt;year&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{2020}&lt;/span&gt;  
+      &lt;span class="na"&gt;year&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{2021}&lt;/span&gt;  
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Python"></category><category term="Python"></category><category term="Machine Learning"></category><category term="Natural Language processing"></category><category term="AI"></category><category term="Conjugation"></category><category term="Linguistics"></category></entry></feed>
