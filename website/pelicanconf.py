@@ -24,6 +24,9 @@ PROJECTS = [{
     {'name': 'potranslator3',
      'url': 'https://github.com/SekouDiaoNlp/potranslator3',
      'description': 'A package to easily translate po and pot files in any language supported by Google Translate.'},
+    {'name': 'conda-forge',
+     'url': 'https://github.com/conda-forge',
+     'description': 'I am a member and contributor to the conda-forge organization.'},
 ]
 
 TIMEZONE = 'Europe/Paris'
@@ -56,6 +59,7 @@ LINKS = (('GitHub Profile', 'https://github.com/SekouDiaoNlp'),
 
 # Social widget
 SOCIAL = (('Github', 'https://github.com/SekouDiaoNlp', 'My Github repositories'),
+          ('Reddit', 'https://www.reddit.com/user/BlackPythonGuru', 'My Reddit Profile'),
           )
 
 DEFAULT_PAGINATION = 10
