@@ -2,14 +2,16 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'SekouDiaoNlp'
-SITENAME = "SekouDiaoNlp's website. Python, Natural Language Processing and AI technologies."
+SITENAME = "Python, Natural Language Processing and AI technologies"
 SITEURL = ''
 
 PATH = 'content'
 ARTICLE_PATHS = ['articles', ]
 
 # Defines the landing page
-LANDING_PAGE_TITLE = "I use Python to develop Natural Language Processing and AI technologies."
+LANDING_PAGE_TITLE = "I use Python to develop Computational Linguistics and AI technologies."
+
+COMMENTBOX_PROJECT = '5690486803136512-proj'
 
 PROJECTS = [{
     'name': 'mlconjug3',
@@ -35,18 +37,31 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+PLUGIN_PATHS = ['C:/Users/user/Documents/Pelican_Plugins']
+PLUGINS = ['extract_toc']
+
+# MARKDOWN = {
+#     'extension_configs': {
+#         'markdown.extensions.toc': {}
+#     }
+# }
+
+# MARKDOWN = (['toc'])
+
 # Blogroll
 LINKS = (('GitHub Profile', 'https://github.com/SekouDiaoNlp'),
          ('Python Packages on PyPi', 'https://pypi.org/user/SekouDiaoNlp/'),
          )
 
 # Social widget
-SOCIAL = (('Gravatar Profile', 'https://fr.gravatar.com/sekoudiaonlp'),
+SOCIAL = (('Github', 'https://github.com/SekouDiaoNlp', 'My Github repositories'),
           )
 
 DEFAULT_PAGINATION = 10
 
 THEME = 'C:/Users/user/Documents/Pelican_Themes/elegant-master'
+
+APPLAUSE_BUTTON = True
 
 ARTICLE_ORDER_BY = 'order'
 PAGE_ORDER_BY = 'order'
