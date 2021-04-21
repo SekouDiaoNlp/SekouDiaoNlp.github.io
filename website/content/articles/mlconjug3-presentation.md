@@ -66,9 +66,10 @@ scikit-learn to modify and retrain the models.
 
 
 
+<br />
 
-Academic publications citing mlconjug
--------------------------------------
+## Academic publications citing mlconjug:
+
 
 
 
@@ -78,9 +79,9 @@ Academic publications citing mlconjug
     Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.
 
 
+<br />
 
-Software projects using mlconjug
---------------------------------
+## Software projects using mlconjug:
 
 
 
@@ -124,8 +125,8 @@ Software projects using mlconjug
 
 
 
-BibTeX
-------
+## BibTeX citation:
+
 
 
 
