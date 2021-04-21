@@ -32,7 +32,7 @@ In this tutorial I will explain how to do that in a detailed and easy to follow 
 
 <br />
 
-## INSTALL GIT AND CREATE A GITHUB ACCOUNT:  
+## INSTALL GIT AND CREATE A GITHUB ACCOUNT  
 
 
 [Git](https://git-scm.com/downloads) is a Source Control System and [GitHub](https://github.com/) is a collaborative platform which allows multiple developers to work
@@ -48,7 +48,7 @@ Create an account on [GitHub](https://github.com/) by clicking on the link.
 
 <br />
 
-## INSTALL A PYTHON DISTRIBUTION:  
+## INSTALL A PYTHON DISTRIBUTION  
 
 
 I recommend using the Python distribution created by Anaconda as this is a great Python distribution and provides
@@ -93,7 +93,7 @@ For faster installation of conda packages use [mamba](https://github.com/mamba-o
 
 <br />
 
-## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:  
+## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT  
 
 
 Install a tool called [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/index.html).
@@ -138,7 +138,7 @@ It will be placed in your current directory. Find detailed information [here](ht
 
 <br />
 
-## IT IS FINALLY TIME TO CODE 😎:  
+## IT IS FINALLY TIME TO CODE 😎  
 
 
 You are now almost ready to code your awesome package. You just need to set up your development environment.
@@ -147,7 +147,7 @@ You are now almost ready to code your awesome package. You just need to set up y
 
 <br />
 
-### CREATE A NEW VIRTUAL ENVIRONMENT:  
+### CREATE A NEW VIRTUAL ENVIRONMENT  
 
 
 You need to first create a python virtual environment that will contain your project and all
@@ -188,7 +188,7 @@ You can find a helpful guide on how to do that [here](https://setuptools.readthe
 
 <br />
 
-### ACTIVATE DEVELOPER MODE:  
+### ACTIVATE DEVELOPER MODE  
 
 
 In order to develop your package you need to make it editable so that any changes you made to the code are immediately
@@ -206,7 +206,7 @@ type the following command:
 
 <br />
 
-### START DEVELOPING YOUR CODE:  
+### START DEVELOPING YOUR CODE  
 
 
 You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.
@@ -236,7 +236,7 @@ You should put your tests in the 'test/' folder created by cookiecutter.
 
 <br />
 
-### MANAGE DEPENDENCIES:  
+### MANAGE DEPENDENCIES  
 
 
 In order to manage your dependencies I recommend to use [pip-upgrader](https://github.com/simion/pip-upgrader):
@@ -277,7 +277,7 @@ After a while you will be ready to build and publish your package. That's great 
 
 <br />
 
-## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:  
+## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER  
 
 
 I also **STRONGLY** advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.
@@ -320,7 +320,7 @@ You are now ready to build your package.
 
 <br />
 
-## BUILD THE PYTHON PACKAGE:  
+## BUILD THE PYTHON PACKAGE  
 
 
 I recommend using the tool [bump2version](https://pypi.org/project/bump2version/) to easily update the version number of your package.
@@ -360,7 +360,7 @@ Now It is time to distribute your package.
 
 <br />
 
-## UPLOAD YOUR PYTHON PACKAGE:  
+## UPLOAD YOUR PYTHON PACKAGE  
 
 
 You are ready to upload your package to [PyPi](https://pypi.org/) which is the official repository of Python packages.
@@ -420,7 +420,7 @@ I advise you to also upload your package to [conda-forge](https://conda-forge.or
 
 <br />
 
-## CONDA-FORGE CONTRIBUTION:  
+## CONDA-FORGE CONTRIBUTION  
 
 
 In order to upload your package to [conda-forge](https://conda-forge.org/) see <https://conda-forge.org/docs/maintainer/adding_pkgs.html> for more
@@ -478,7 +478,7 @@ You can now update this repository, and the changes you make will be automatical
 
 <br />
 
-## CONDA-FORGE FEEDSTOCK MANAGEMENT:  
+## CONDA-FORGE FEEDSTOCK MANAGEMENT  
 
 
 In order to efficiently manage your new package repository follow these instructions.
@@ -523,7 +523,7 @@ Your package is now available at <https://anaconda.org/conda-forge/your-package-
 
 <br />
 
-## CONCLUSIONS:  
+## CONCLUSIONS  
 
  You are now the proud creator and maintainer of a python package which can be used by almost anybody either through PyPi
  or through conda-forge.
@@ -556,7 +556,13 @@ or to fix bugs.
 I hope I have whet your appetite for the next article in this series about Python packaging and distribution
 and that you enjoyed this article.
 
-Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions.
+Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions,
+as it is hard to gauge how much or how little details I should provide given tht I have a lot of experience in packaging and
+distributing python packages, I tend to forget how frustrating it was the first time.
+
+This is the reason I wrote this tutorial, to collate in a single place the many resources a first timer would have to dig through
+in order to distribute their first Python package.
+
 Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.
 
 Enjoy!

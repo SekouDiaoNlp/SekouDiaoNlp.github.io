@@ -70,7 +70,7 @@ scikit-learn to modify and retrain the models.
 
 <br />
 
-## Academic publications citing mlconjug:
+## Academic publications citing mlconjug3
 
 
 
@@ -83,7 +83,7 @@ scikit-learn to modify and retrain the models.
 
 <br />
 
-## Software projects using mlconjug:
+## Software projects using mlconjug3
 
 
 
@@ -126,8 +126,9 @@ scikit-learn to modify and retrain the models.
     game
 
 
+<br />
 
-## BibTeX citation:
+## BibTeX citation
 
 
 
@@ -142,7 +143,7 @@ citation format:
           title={mlconjug3},  
           author={Sekou Diao},  
           journal={GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by},  
-          year={2020}  
+          year={2021}  
         }
 
 
