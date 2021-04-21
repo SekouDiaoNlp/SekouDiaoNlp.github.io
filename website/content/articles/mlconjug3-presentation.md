@@ -11,15 +11,15 @@ order: 001
 I am making this post to present to the world my Python library which has the best AI (as far as I know)
 capable of conjugating verbs in several languages.
 
-<br />
+
 
 You can find below a summary of what it can achieve.
 
-<br />
+
 
 # MLCONJUG3
 
-<br />
+
 
 [![Package Maintenance Status]][1]  [![Package Maintener]][2]  [![Build status on Windows, MacOs and Linux]][3]
 
@@ -30,23 +30,23 @@ You can find below a summary of what it can achieve.
 [![Supported platforms]][5]
 
 
-<br />
+
 
 A Python library to conjugate verbs in French, English, Spanish,
 Italian, Portuguese and Romanian (more soon) using Machine Learning
 techniques.
 
-<br />
+
 
 Any verb in one of the supported language can be conjugated, as the
 module contains a Machine Learning model of how the verbs behave.
 
-<br />
+
 
 Even completely new or made-up verbs can be successfully conjugated in
 this manner.
 
-<br />
+
 
 The supplied pre-trained models are composed of:
 
@@ -54,35 +54,35 @@ The supplied pre-trained models are composed of:
 -   a feature selector using Linear Support Vector Classification,
 -   a classifier using Stochastic Gradient Descent.
 
-<br />
+
 
 mlconjug3 uses scikit-learn to implement the Machine Learning
 algorithms.
 
-<br />
+
 
 Users of the library can use any compatible classifiers from
 scikit-learn to modify and retrain the models.
 
 
-<br />
+
 
 Academic publications citing mlconjug
 -------------------------------------
 
-<br />
+
 
 -   Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
     Mitchell and Noah D. Goodman and Chris Piech.  
     "[Generative Grading Neural Approximate Parsing for Automated Student Feedback](https://arxiv.org/abs/1905.09916)".   
     Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.
 
-<br />
+
 
 Software projects using mlconjug
 --------------------------------
 
-<br />
+
 
 -   [Gender Bias Visualization](https://github.com/GesaJo/Gender-Bias-Visualization)
     This project offers tools to visualize the gender bias in
@@ -122,17 +122,17 @@ Software projects using mlconjug
     A dwarf-fortress adventure mode-inspired rogue-like Pygame Python3
     game
 
-<br />
+
 
 BibTeX
 ------
 
-<br />
+
 
 If you want to cite mlconjug3 in an academic publication use this
 citation format:
 
-<br />
+
 
     :::bibtex
     @article{mlconjug3,  
