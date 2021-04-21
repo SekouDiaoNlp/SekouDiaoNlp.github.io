@@ -1,4 +1,4 @@
-Title: How to create build and publish a Python package
+Title: How to create, build and publish a Python package
 Category: Python
 Date: 2021-04-20
 Tags: Python, Pypi, Anaconda, conda-forge
