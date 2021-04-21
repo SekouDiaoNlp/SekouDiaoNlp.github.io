@@ -1,154 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>How to create, build and publish a Python package</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="SekouDiaoNlp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-    <link href="/theme/css/pygments.css" rel="stylesheet">
+        <meta name="author" content="SekouDiaoNlp" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+<meta name="keywords" content="Python, Pypi, Anaconda, conda-forge, Python, " />
 
-    <link href="/" type="application/atom+xml" rel="alternate" title="SekouDiaoNlp's website. Python, Natural Language Processing and AI technologies. ATOM Feed" />
+<meta property="og:title" content="How to create, build and publish a Python package "/>
+<meta property="og:url" content="/How-to-create-build-and-publish-a-Python-package.html" />
+<meta property="og:description" content="A nifty tutorial about how to create build and publish a Python package." />
+<meta property="og:site_name" content="SekouDiaoNlp&#39;s website. Python, Natural Language Processing and AI technologies." />
+<meta property="og:article:author" content="SekouDiaoNlp" />
+<meta property="og:article:published_time" content="2021-04-20T00:00:00+02:00" />
+<meta name="twitter:title" content="How to create, build and publish a Python package ">
+<meta name="twitter:description" content="A nifty tutorial about how to create build and publish a Python package.">
 
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/index.html">SekouDiaoNlp's website. Python, Natural Language Processing and AI technologies. </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                <li><a href="/pages/about.html">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li class="active">
-                    <a href="/category/python.html">
-						<i class="icon-folder-open icon-large"></i>Python
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-<section id="content">
-        <article>
-                <header>
-                        <h1>
-                                <a href=""
-                                        rel="bookmark"
-                                        title="Permalink to How to create, build and publish a Python package">
-                                        How to create, build and publish a Python package
-                                </a>
-                        </h1>
-                </header>
-                <div class="entry-content">
-                <div class="well">
-<footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2021-04-20T00:00:00+02:00">
-        <i class="icon-calendar"></i>mar. 20 avril 2021
-</abbr>
-<span class="label">By</span>
-<a href="/author/sekoudiaonlp.html"><i class="icon-user"></i>SekouDiaoNlp</a>
-<span class="label">Category</span>
-<a href="/category/python.html"><i class="icon-folder-open"></i>Python</a>.
+        <title>How to create, build and publish a Python package  · SekouDiaoNlp&#39;s website. Python, Natural Language Processing and AI technologies.
+</title>
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="SekouDiaoNlp&#39;s website. Python, Natural Language Processing and AI technologies. - Full Atom Feed" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'G-T305ZX5D6R', 'auto');
+    ga('send', 'pageview');
+</script>
 
 
-<span class="label">Tags</span>
-	<a href="/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="/tag/pypi.html"><i class="icon-tag"></i>Pypi</a>
-	<a href="/tag/anaconda.html"><i class="icon-tag"></i>Anaconda</a>
-	<a href="/tag/conda-forge.html"><i class="icon-tag"></i>conda-forge</a>
-</footer><!-- /.post-info -->                </div>
-                <h1>An easy step-by-step guide to build and publish Python packages.</h1>
-<p><br /></p>
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="/"><span class=site-name>SekouDiaoNlp's website. Python, Natural Language Processing and AI technologies.</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       "/"
+                                    >Home</a>
+                                </li>
+                                <li ><a href="/categories.html">Categories</a></li>
+                                <li ><a href="/tags.html">Tags</a></li>
+                                <li ><a href="/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="/How-to-create-build-and-publish-a-Python-package.html">
+                How to create, build and publish a Python package
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <h1>An easy step-by-step guide to build and publish Python packages.</h1>
 <p>So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.</p>
-<p><br />
-That's a great idea and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.</p>
-<p><br />
-However, the process of creating, building and publishing a python process might be tedious and time-consuming.</p>
-<p><br />
-You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.</p>
-<p><br />
-In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.</p>
-<p><br />
-<br /></p>
+<p>That's a great idea and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.</p>
+<p>However, the process of creating, building and publishing a python process might be tedious and time-consuming.</p>
+<p>You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.</p>
+<p>In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.</p>
 <h2>INSTALL GIT AND CREATE A GITHUB ACCOUNT:</h2>
-<p><br /></p>
 <p><a href="https://git-scm.com/downloads">Git</a> is a Source Control System and <a href="https://github.com/">GitHub</a> is a collaborative platform which allows multiple developers to work
 on the same projects as well as sharing your code with the world.</p>
-<p><br />
-You can download and install <a href="https://git-scm.com/downloads">git</a> by clicking on the link and follow the installation instructions.</p>
-<p><br />
-Create an account on <a href="https://github.com/">GitHub</a> by clicking on the link.</p>
-<p><br />
-<br /></p>
+<p>You can download and install <a href="https://git-scm.com/downloads">git</a> by clicking on the link and follow the installation instructions.</p>
+<p>Create an account on <a href="https://github.com/">GitHub</a> by clicking on the link.</p>
 <h2>INSTALL A PYTHON DISTRIBUTION:</h2>
-<p><br /></p>
 <p>I recommend using the Python distribution created by Anaconda as this is a great Python distribution and provides
 pre-compiled packages for many python packages, especially scientific packages bundled with libraries written in C,
 C++, Fortran, Go, etc...</p>
-<p><br />
-It is really easy to use and by using Anaconda you don't need to have compilers installed on your computer,
+<p>It is really easy to use and by using Anaconda you don't need to have compilers installed on your computer,
 which can be a big hassle especially on Windows systems, or more exotic architectures with ARM, PowerPC or AArch64 processors.</p>
-<p><br />
-The Anaconda distributions comes in 2 flavors:</p>
-<p><br /></p>
+<p>The Anaconda distributions comes in 2 flavors:</p>
 <ul>
 <li>
 <p>The main distribution is <a href="https://www.anaconda.com/products/individual#Downloads">Anaconda </a> [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.<br>
@@ -159,262 +113,172 @@ The Anaconda distributions comes in 2 flavors:</p>
 <p>The other distribution is <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html">Miniconda</a>. It comes pre-bundled with just the core Python and a few packages.</p>
 </li>
 </ul>
-<p><br />
-You can install your chosen distribution by clicking on their link and following the installation instructions provided on
+<p>You can install your chosen distribution by clicking on their link and following the installation instructions provided on
 their website.</p>
-<p><br /></p>
 <p>Once Anaconda/Miniconda is installed, you need to add the <a href="https://conda-forge.org/">conda-forge</a> channel to your list of package repositories:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
 <span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="nb">set</span> <span class="n">channel_priority</span> <span class="n">strict</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>For faster installation of conda packages use <a href="https://github.com/mamba-org/mamba">mamba</a> instead of conda:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="n">mamba</span> <span class="o">-</span><span class="n">n</span> <span class="n">base</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
 </code></pre></div>
 
-<p><br />
-<br /></p>
 <h2>CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:</h2>
-<p><br /></p>
 <p>Install a tool called <a href="https://cookiecutter.readthedocs.io/en/1.7.2/index.html">cookiecutter</a>.
 This is a command-line utility that creates projects from a Python package project template.</p>
 <div class="highlight"><pre><span></span><code><span class="n">mamba</span> <span class="n">install</span> <span class="n">cookiecutter</span> <span class="o">-</span><span class="n">y</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Then create your package structure by cloning a Cookiecutter project template:</p>
 <div class="highlight"><pre><span></span><code><span class="go">git clone git@github.com:audreyr/cookiecutter-pypackage.git</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Modify the variables defined in cookiecutter.json and have a look at the project structure if you want to make some changes.</p>
-<p><br /></p>
 <p><a href="https://github.com/new">Create a new repository</a> on GitHub named as the name of your package then push your newly created
 project folder to this new repository.</p>
-<p><br /></p>
 <p>Then generate your project from the project template:</p>
 <div class="highlight"><pre><span></span><code><span class="n">cookiecutter</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span> <span class="n">template</span><span class="o">&gt;/</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>You will be prompted to enter some project config values. (These are defined in the project’s cookiecutter.json.)</p>
-<p><br /></p>
 <p>Then, Cookiecutter will generate a project from the template, using the values that you entered.
 It will be placed in your current directory. Find detailed information <a href="https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html">here</a>.</p>
-<p><br />
-<br /></p>
 <h2>IT IS FINALLY TIME TO CODE 😎:</h2>
-<p><br /></p>
 <p>You are now almost ready to code your awesome package. You just need to set up your development environment.</p>
-<p><br />
-<br /></p>
 <h3>CREATE A NEW VIRTUAL ENVIRONMENT:</h3>
-<p><br /></p>
 <p>You need to first create a python virtual environment that will contain your project and all
 its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.</p>
-<p><br /></p>
 <p>To create a new virtual environment:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">myenv</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.</span><span class="n">x</span> <span class="o">&lt;</span><span class="n">optional</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">you</span> <span class="n">want</span> <span class="n">pre</span><span class="o">-</span><span class="n">installed</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">virtual</span> <span class="n">environment</span><span class="o">&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Where 'myenv' is the name of your virtual environment and replace 'python=3.x' by the python version you desire.</p>
-<p><br /></p>
 <p>You can also specify a list of packages that you want pre-installed in this virtual environment and conda will install them automatically.</p>
-<p><br /></p>
 <p>Once the virtual environment has been created, navigate to the root folder of your project and activate the new virtual environment:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">activate</span> <span class="n">myenv</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Where 'myenv' is still the name of your virtual environment.</p>
-<p><br /></p>
 <p>Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that <a href="https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html">here</a>.</p>
-<p><br />
-<br /></p>
 <h3>ACTIVATE DEVELOPER MODE:</h3>
-<p><br /></p>
 <p>In order to develop your package you need to make it editable so that any changes you made to the code are immediately
 applied, and you can test and debug your code.</p>
-<p><br /></p>
 <p>To enable this feature, while still in the root folder of your project (and making sure that your virtual environment is active)
 type the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
 </code></pre></div>
 
-<p><br />
-<br /></p>
 <h3>START DEVELOPING YOUR CODE:</h3>
-<p><br /></p>
 <p>You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.</p>
-<p><br /></p>
 <p>You can specify the dependencies that your package needs to run in a file called requirements.txt.</p>
-<p><br /></p>
 <p>The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.</p>
-<p><br /></p>
 <p>You can find more information on the use of requirements files <a href="https://pip.pypa.io/en/stable/user_guide/#requirements-files">here</a>.</p>
-<p><br /></p>
 <p>I <strong>STRONGLY</strong> advise you to write tests and run them regularly. I recommend using <a href="https://pytest.org/">pytest</a> to run your tests.
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.</p>
-<p><br /></p>
 <p>You should put your tests in the 'test/' folder created by cookiecutter.</p>
-<p><br />
-<br /></p>
 <h3>MANAGE DEPENDENCIES:</h3>
-<p><br /></p>
 <p>In order to manage your dependencies I recommend to use <a href="https://github.com/simion/pip-upgrader">pip-upgrader</a>:
 It is a tool which allows you to automatically keep your dependencies up to date.</p>
-<p><br /></p>
 <p>First install the dependencies you specified by typing these commands:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>During the course of your development you can make sure that your dependencies are up to date by running this command from time to time:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span><span class="o">-</span><span class="n">upgrade</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>This will check on PyPi if there are newer versions of your dependencies and update the requirements files with the latest versions.
 If it finds new version, you just need to reinstall your dependencies.</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>After a while you will be ready to build and publish your package. That's great news!</p>
-<p><br />
-<br /></p>
 <h2>GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:</h2>
-<p><br /></p>
 <p>I also <strong>STRONGLY</strong> advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.</p>
-<p><br /></p>
 <p>I recommend using <a href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a> to autogenerate the documentation.
 You can install it by typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">Sphinx</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs/ folder
 of your project and running:</p>
 <div class="highlight"><pre><span></span><code><span class="go">make html</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>This will auto-generate an html version of your documentation.
 That's great but wouldn't it be better if your documentation was automatically uploaded to <a href="https://readthedocs.org/">readthedocs</a> so that it is always available online?</p>
-<p><br /></p>
 <p>Create an account <a href="https://readthedocs.org/">readthedocs</a> and <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">follow their instructions</a>
 on how to automatically upload your documentation to their site every time you release a new version of your package.</p>
-<p><br /></p>
 <p>The documentation will be automatically available and always up to date at https://your-package-name.readthedocs.io/en/latest/index.html</p>
-<p><br /></p>
 <p>You are now ready to build your package.</p>
-<p><br />
-<br /></p>
 <h2>BUILD THE PYTHON PACKAGE:</h2>
-<p><br /></p>
 <p>I recommend using the tool <a href="https://pypi.org/project/bump2version/">bump2version</a> to easily update the version number of your package.
 You can install it by typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">bump2version</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>When you are ready to release a new version of your package, type:</p>
 <div class="highlight"><pre><span></span><code><span class="n">bump2version</span> <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Where <option> can be either major, minor or patch depending on how you want to update the version number.</p>
-<p><br /></p>
 <p>Once you bumped the version number, it is time to build your package.
 Run the following command to build your package. This will create both a source distribution and a binary distribution.</p>
 <div class="highlight"><pre><span></span><code><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span> <span class="n">bdist_wheel</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>The built packages will be placed in the dist/ folder of your project.</p>
-<p><br /></p>
 <p>Now It is time to distribute your package.</p>
-<p><br />
-<br /></p>
 <h2>UPLOAD YOUR PYTHON PACKAGE:</h2>
-<p><br /></p>
 <p>You are ready to upload your package to <a href="https://pypi.org/">PyPi</a> which is the official repository of Python packages.</p>
-<p><br /></p>
 <p>You must first <a href="https://pypi.org/account/register/">create an account on PyPi</a> to be able to upload your package.</p>
-<p><br /></p>
 <p>The tool to upload your package is called <a href="https://twine.readthedocs.io/en/latest/">twine</a>. It is very easy to use.</p>
-<p><br /></p>
 <p>To install twine, type the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">twine</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Once twine is installed, upload your package to PyPi by typing this command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">twine</span> <span class="n">upload</span> <span class="n">dist</span><span class="o">/*</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>This command will ask you for the username and password of your Pypi account.</p>
-<p><br /></p>
 <p>You can alternatively create a file called <a href="https://packaging.python.org/specifications/pypirc/">.pypirc</a> which contains
 your configuration and credentials and use this command to upload your package:</p>
 <div class="highlight"><pre><span></span><code><span class="n">twine</span> <span class="n">upload</span> <span class="o">--</span><span class="n">config</span><span class="o">-</span><span class="n">file</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">your</span><span class="o">/.</span><span class="n">pypirc</span><span class="o">&gt;</span> <span class="n">dist</span><span class="o">/*</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Once uploaded to PyPi, your package will be able to be installed by people by simply typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>You have now successfully uploaded your package to Pypi.
 This is great and now users can start to use your package!</p>
-<p><br /></p>
 <p>But if you want your package to be even more widely available and be able to be installed on all platforms even exotic ones,
 I advise you to also upload your package to <a href="https://conda-forge.org/">conda-forge</a>. This way your package will be also available on Anaconda.</p>
-<p><br />
-<br /></p>
 <h2>CONDA-FORGE CONTRIBUTION:</h2>
-<p><br /></p>
 <p>In order to upload your package to <a href="https://conda-forge.org/">conda-forge</a> see <a href="https://conda-forge.org/docs/maintainer/adding_pkgs.html">https://conda-forge.org/docs/maintainer/adding_pkgs.html</a> for more
 details.</p>
-<p><br /></p>
 <p>I will give a quick rundown of how to achieve this:</p>
-<p><br /></p>
 <p>Fork <a href="https://github.com/conda-forge/staged-recipes/tree/master/recipes">https://github.com/conda-forge/staged-recipes/tree/master/recipes</a></p>
-<p><br /></p>
 <p>Create a new branch from the staged-recipes master branch.</p>
-<p><br /></p>
 <p>Generate a new folder with &lt;your_package_name&gt; in the recipes subdirectory.</p>
-<p><br /></p>
 <p>Generate the recipe for your package with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">mamba</span> <span class="n">install</span> <span class="n">grayskull</span>
 <span class="n">grayskull</span> <span class="n">pypi</span> <span class="o">&lt;</span><span class="n">your_package_name</span><span class="o">&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>This will grab the latest version of your package from PyPi and auto-generate the recipe to create a conda package.</p>
-<p><br /></p>
 <p>Edit the file meta.yaml with the relevant information.</p>
-<p><br /></p>
 <p>Create a Pull Request to upload the recipe.</p>
-<p><br /></p>
 <p>After the Pull Request is merged, a new repository with your package is created at <a href="https://github.com/conda-forge/\">https://github.com/conda-forge/\</a></p>
-<p><br /></p>
 <p>You are now the maintainer of this repository.</p>
-<p><br /></p>
 <p>You can now update this repository, and the changes you make will be automatically updated to conda-forge.</p>
-<p><br />
-<br /></p>
 <h2>CONDA-FORGE FEEDSTOCK MANAGEMENT:</h2>
-<p><br /></p>
 <p>In order to efficiently manage your new package repository follow these instructions.</p>
-<p><br /></p>
 <p>Optionally add a new remote:</p>
 <div class="highlight"><pre><span></span><code><span class="go">git checkout master</span>
 <span class="go">git remote add upstream https://github.com/conda-forge/&lt;feedstock&gt;</span>
@@ -422,9 +286,7 @@ details.</p>
 <span class="go">git checkout -b &lt;branch-name&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Where feedstock is your package name and branch-name is a new git branch where you will make your changes.</p>
-<p><br /></p>
 <p>Make changes locally to the recipe and commit the changes:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">smithy</span> <span class="n">rerender</span> <span class="o">-</span><span class="n">c</span> <span class="n">auto</span>
 
@@ -432,113 +294,177 @@ details.</p>
 <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="o">&lt;</span><span class="n">branch</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
 </code></pre></div>
 
-<p><br /></p>
 <p>Create a Pull Request on <a href="https://github.com/feedstock/\">https://github.com/feedstock/\</a>.</p>
-<p><br /></p>
 <p>Merge the Pull Request after all tests are successful.</p>
-<p><br /></p>
 <p>Your package is now available at <a href="https://anaconda.org/conda-forge/your-package-name\">https://anaconda.org/conda-forge/your-package-name\</a>.</p>
-                </div><!-- /.entry-content -->
-        </article>
-</section>
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="https://github.com/SekouDiaoNlp"><i class="icon-external-link"></i>GitHub Profile</a></li>
-    <li><a href="https://pypi.org/user/SekouDiaoNlp/"><i class="icon-external-link"></i>Python Packages on PyPi</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-    <li><a href="https://fr.gravatar.com/sekoudiaonlp"><i class="icon-Gravatar Profile-sign icon-large"></i>Gravatar Profile</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="/category/python.html">
-    <i class="icon-folder-open icon-large"></i>Python
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>, <pelican.contents.Article object at 0x00000209B6BFA940>]">
-    <a href="/tag/python.html">
-        <i class="icon-tag icon-large"></i>Python
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>]">
-    <a href="/tag/machine-learning.html">
-        <i class="icon-tag icon-large"></i>Machine Learning
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>]">
-    <a href="/tag/natural-language-processing.html">
-        <i class="icon-tag icon-large"></i>Natural Language processing
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>]">
-    <a href="/tag/ai.html">
-        <i class="icon-tag icon-large"></i>AI
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>]">
-    <a href="/tag/conjugation.html">
-        <i class="icon-tag icon-large"></i>Conjugation
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BAD3A0>]">
-    <a href="/tag/linguistics.html">
-        <i class="icon-tag icon-large"></i>Linguistics
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BFA940>]">
-    <a href="/tag/pypi.html">
-        <i class="icon-tag icon-large"></i>Pypi
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BFA940>]">
-    <a href="/tag/anaconda.html">
-        <i class="icon-tag icon-large"></i>Anaconda
-    </a>
-</li>
-<li class="tag-[<pelican.contents.Article object at 0x00000209B6BFA940>]">
-    <a href="/tag/conda-forge.html">
-        <i class="icon-tag icon-large"></i>conda-forge
-    </a>
-</li>
 
 
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
+             
+ 
+            
+            
+            
 
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+
+
+
+            <hr/>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2021-04-20T00:00:00+02:00">mar. 20 avril 2021</time>
+            <h4>Category</h4>
+            <a class="category-link" href="/categories.html#python-ref">Python</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="/tags.html#anaconda-ref">Anaconda
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="/tags.html#conda-forge-ref">conda-forge
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="/tags.html#pypi-ref">Pypi
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="/tags.html#python-ref">Python
+                    <span class="superscript">2</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+<div id="sidebar-social-link">
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
 </script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("G-T305ZX5D6R");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/theme/js/jquery-1.7.2.min.js"></script>
-    <script src="/theme/js/bootstrap.min.js"></script>
-  </body>
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
 </html>
