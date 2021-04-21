@@ -23,6 +23,7 @@
 <meta property="og:site_name" content="Python, Natural Language Processing and AI technologies" />
 <meta property="og:article:author" content="SekouDiaoNlp" />
 <meta property="og:article:published_time" content="2021-04-20T00:00:00+02:00" />
+<meta property="og:article:modified_time" content="2021-04-21T00:00:00+02:00" />
 <meta name="twitter:title" content="How to create, build and publish a Python package ">
 <meta name="twitter:description" content="A nifty tutorial about how to create build and publish a Python package.">
 
@@ -83,20 +84,51 @@
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#an-easy-step-by-step-guide-to-build-and-publish-python-packages">An easy step-by-step guide to build and publish Python packages.</a><ul>
+<li><a href="#install-git-and-create-a-github-account">INSTALL GIT AND CREATE A GITHUB ACCOUNT:</a></li>
+<li><a href="#install-a-python-distribution">INSTALL A PYTHON DISTRIBUTION:</a></li>
+<li><a href="#create-the-base-folder-structure-of-your-project">CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:</a></li>
+<li><a href="#it-is-finally-time-to-code">IT IS FINALLY TIME TO CODE 😎:</a><ul>
+<li><a href="#create-a-new-virtual-environment">CREATE A NEW VIRTUAL ENVIRONMENT:</a></li>
+<li><a href="#activate-developer-mode">ACTIVATE DEVELOPER MODE:</a></li>
+<li><a href="#start-developing-your-code">START DEVELOPING YOUR CODE:</a></li>
+<li><a href="#manage-dependencies">MANAGE DEPENDENCIES:</a></li>
+</ul>
+</li>
+<li><a href="#generate-documentation-from-the-documentation-folder">GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:</a></li>
+<li><a href="#build-the-python-package">BUILD THE PYTHON PACKAGE:</a></li>
+<li><a href="#upload-your-python-package">UPLOAD YOUR PYTHON PACKAGE:</a></li>
+<li><a href="#conda-forge-contribution">CONDA-FORGE CONTRIBUTION:</a></li>
+<li><a href="#conda-forge-feedstock-management">CONDA-FORGE FEEDSTOCK MANAGEMENT:</a></li>
+<li><a href="#conclusions">CONCLUSIONS:</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
             
-            <h1>An easy step-by-step guide to build and publish Python packages.</h1>
+            
+<h1 id="an-easy-step-by-step-guide-to-build-and-publish-python-packages">An easy step-by-step guide to build and publish Python packages.</h1>
 <p>So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.</p>
 <p>That's a great idea and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.</p>
 <p>However, the process of creating, building and publishing a python process might be tedious and time-consuming.</p>
 <p>You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.</p>
 <p>In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.</p>
-<h2>INSTALL GIT AND CREATE A GITHUB ACCOUNT:</h2>
+<p><br/></p>
+<h2 id="install-git-and-create-a-github-account">INSTALL GIT AND CREATE A GITHUB ACCOUNT:</h2>
 <p><a href="https://git-scm.com/downloads">Git</a> is a Source Control System and <a href="https://github.com/">GitHub</a> is a collaborative platform which allows multiple developers to work
 on the same projects as well as sharing your code with the world.</p>
 <p>You can download and install <a href="https://git-scm.com/downloads">git</a> by clicking on the link and follow the installation instructions.</p>
 <p>Create an account on <a href="https://github.com/">GitHub</a> by clicking on the link.</p>
-<h2>INSTALL A PYTHON DISTRIBUTION:</h2>
+<p><br/></p>
+<h2 id="install-a-python-distribution">INSTALL A PYTHON DISTRIBUTION:</h2>
 <p>I recommend using the Python distribution created by Anaconda as this is a great Python distribution and provides
 pre-compiled packages for many python packages, especially scientific packages bundled with libraries written in C,
 C++, Fortran, Go, etc...</p>
@@ -105,7 +137,7 @@ which can be a big hassle especially on Windows systems, or more exotic architec
 <p>The Anaconda distributions comes in 2 flavors:</p>
 <ul>
 <li>
-<p>The main distribution is <a href="https://www.anaconda.com/products/individual#Downloads">Anaconda </a> [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.<br>
+<p>The main distribution is <a href="https://www.anaconda.com/products/individual#Downloads">Anaconda </a> [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.<br/>
  It takes time to download and install and takes a large amount of disk space (a few minutes and 3 GB),
  But you won't need to install each of the packages you want to use individually.  </p>
 </li>
@@ -119,58 +151,55 @@ their website.</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
 <span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="nb">set</span> <span class="n">channel_priority</span> <span class="n">strict</span>
 </code></pre></div>
-
 <p>For faster installation of conda packages use <a href="https://github.com/mamba-org/mamba">mamba</a> instead of conda:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="n">mamba</span> <span class="o">-</span><span class="n">n</span> <span class="n">base</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
 </code></pre></div>
-
-<h2>CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:</h2>
+<p><br/></p>
+<h2 id="create-the-base-folder-structure-of-your-project">CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:</h2>
 <p>Install a tool called <a href="https://cookiecutter.readthedocs.io/en/1.7.2/index.html">cookiecutter</a>.
 This is a command-line utility that creates projects from a Python package project template.</p>
 <div class="highlight"><pre><span></span><code><span class="n">mamba</span> <span class="n">install</span> <span class="n">cookiecutter</span> <span class="o">-</span><span class="n">y</span>
 </code></pre></div>
-
 <p>Then create your package structure by cloning a Cookiecutter project template:</p>
-<div class="highlight"><pre><span></span><code><span class="go">git clone git@github.com:audreyr/cookiecutter-pypackage.git</span>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="n">audreyr</span><span class="o">/</span><span class="n">cookiecutter</span><span class="o">-</span><span class="n">pypackage</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
 </code></pre></div>
-
 <p>Modify the variables defined in cookiecutter.json and have a look at the project structure if you want to make some changes.</p>
 <p><a href="https://github.com/new">Create a new repository</a> on GitHub named as the name of your package then push your newly created
 project folder to this new repository.</p>
 <p>Then generate your project from the project template:</p>
 <div class="highlight"><pre><span></span><code><span class="n">cookiecutter</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">project</span> <span class="n">template</span><span class="o">&gt;/</span>
 </code></pre></div>
-
 <p>You will be prompted to enter some project config values. (These are defined in the project’s cookiecutter.json.)</p>
 <p>Then, Cookiecutter will generate a project from the template, using the values that you entered.
 It will be placed in your current directory. Find detailed information <a href="https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html">here</a>.</p>
-<h2>IT IS FINALLY TIME TO CODE 😎:</h2>
+<p><br/></p>
+<h2 id="it-is-finally-time-to-code">IT IS FINALLY TIME TO CODE 😎:</h2>
 <p>You are now almost ready to code your awesome package. You just need to set up your development environment.</p>
-<h3>CREATE A NEW VIRTUAL ENVIRONMENT:</h3>
+<p><br/></p>
+<h3 id="create-a-new-virtual-environment">CREATE A NEW VIRTUAL ENVIRONMENT:</h3>
 <p>You need to first create a python virtual environment that will contain your project and all
 its dependencies. This will prevent your needed dependencies to interfere with the main Python environment.</p>
 <p>To create a new virtual environment:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">myenv</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.</span><span class="n">x</span> <span class="o">&lt;</span><span class="n">optional</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">you</span> <span class="n">want</span> <span class="n">pre</span><span class="o">-</span><span class="n">installed</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">virtual</span> <span class="n">environment</span><span class="o">&gt;</span>
 </code></pre></div>
-
 <p>Where 'myenv' is the name of your virtual environment and replace 'python=3.x' by the python version you desire.</p>
 <p>You can also specify a list of packages that you want pre-installed in this virtual environment and conda will install them automatically.</p>
 <p>Once the virtual environment has been created, navigate to the root folder of your project and activate the new virtual environment:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">activate</span> <span class="n">myenv</span>
 </code></pre></div>
-
 <p>Where 'myenv' is still the name of your virtual environment.</p>
 <p>Modify the files 'setup.cfg' and 'setup.py' according to your needs.
 You can find a helpful guide on how to do that <a href="https://setuptools.readthedocs.io/en/latest/userguide/quickstart.html">here</a>.</p>
-<h3>ACTIVATE DEVELOPER MODE:</h3>
+<p><br/></p>
+<h3 id="activate-developer-mode">ACTIVATE DEVELOPER MODE:</h3>
 <p>In order to develop your package you need to make it editable so that any changes you made to the code are immediately
 applied, and you can test and debug your code.</p>
 <p>To enable this feature, while still in the root folder of your project (and making sure that your virtual environment is active)
 type the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
 </code></pre></div>
-
-<h3>START DEVELOPING YOUR CODE:</h3>
+<p><br/></p>
+<h3 id="start-developing-your-code">START DEVELOPING YOUR CODE:</h3>
 <p>You can now create and edit your code, add dependencies and run unit tests on your code to squash any bug that might be crawling around.</p>
 <p>You can specify the dependencies that your package needs to run in a file called requirements.txt.</p>
 <p>The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.</p>
@@ -178,88 +207,84 @@ type the following command:</p>
 <p>I <strong>STRONGLY</strong> advise you to write tests and run them regularly. I recommend using <a href="https://pytest.org/">pytest</a> to run your tests.
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.</p>
 <p>You should put your tests in the 'test/' folder created by cookiecutter.</p>
-<h3>MANAGE DEPENDENCIES:</h3>
+<p><br/></p>
+<h3 id="manage-dependencies">MANAGE DEPENDENCIES:</h3>
 <p>In order to manage your dependencies I recommend to use <a href="https://github.com/simion/pip-upgrader">pip-upgrader</a>:
 It is a tool which allows you to automatically keep your dependencies up to date.</p>
+<p>Install pip-upgrader by typing:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pip</span><span class="o">-</span><span class="n">upgrader</span>
+</code></pre></div>
 <p>First install the dependencies you specified by typing these commands:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
-
 <p>During the course of your development you can make sure that your dependencies are up to date by running this command from time to time:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span><span class="o">-</span><span class="n">upgrade</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
-
 <p>This will check on PyPi if there are newer versions of your dependencies and update the requirements files with the latest versions.
 If it finds new version, you just need to reinstall your dependencies.</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements_dev</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
-
 <p>After a while you will be ready to build and publish your package. That's great news!</p>
-<h2>GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:</h2>
+<p><br/></p>
+<h2 id="generate-documentation-from-the-documentation-folder">GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:</h2>
 <p>I also <strong>STRONGLY</strong> advise you to write a good documentation for your project as it makes a great difference in the potential success of your project.</p>
 <p>I recommend using <a href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a> to autogenerate the documentation.
 You can install it by typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">Sphinx</span>
 </code></pre></div>
-
 <p>Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs/ folder
 of your project and running:</p>
-<div class="highlight"><pre><span></span><code><span class="go">make html</span>
+<div class="highlight"><pre><span></span><code>make html
 </code></pre></div>
-
 <p>This will auto-generate an html version of your documentation.
 That's great but wouldn't it be better if your documentation was automatically uploaded to <a href="https://readthedocs.org/">readthedocs</a> so that it is always available online?</p>
 <p>Create an account <a href="https://readthedocs.org/">readthedocs</a> and <a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html">follow their instructions</a>
 on how to automatically upload your documentation to their site every time you release a new version of your package.</p>
 <p>The documentation will be automatically available and always up to date at https://your-package-name.readthedocs.io/en/latest/index.html</p>
 <p>You are now ready to build your package.</p>
-<h2>BUILD THE PYTHON PACKAGE:</h2>
+<p><br/></p>
+<h2 id="build-the-python-package">BUILD THE PYTHON PACKAGE:</h2>
 <p>I recommend using the tool <a href="https://pypi.org/project/bump2version/">bump2version</a> to easily update the version number of your package.
 You can install it by typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">bump2version</span>
 </code></pre></div>
-
 <p>When you are ready to release a new version of your package, type:</p>
 <div class="highlight"><pre><span></span><code><span class="n">bump2version</span> <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span>
 </code></pre></div>
-
-<p>Where <option> can be either major, minor or patch depending on how you want to update the version number.</p>
+<p>Where <option> can be either major, minor or patch depending on how you want to update the version number.</option></p>
 <p>Once you bumped the version number, it is time to build your package.
 Run the following command to build your package. This will create both a source distribution and a binary distribution.</p>
 <div class="highlight"><pre><span></span><code><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span> <span class="n">bdist_wheel</span>
 </code></pre></div>
-
 <p>The built packages will be placed in the dist/ folder of your project.</p>
 <p>Now It is time to distribute your package.</p>
-<h2>UPLOAD YOUR PYTHON PACKAGE:</h2>
+<p><br/></p>
+<h2 id="upload-your-python-package">UPLOAD YOUR PYTHON PACKAGE:</h2>
 <p>You are ready to upload your package to <a href="https://pypi.org/">PyPi</a> which is the official repository of Python packages.</p>
 <p>You must first <a href="https://pypi.org/account/register/">create an account on PyPi</a> to be able to upload your package.</p>
 <p>The tool to upload your package is called <a href="https://twine.readthedocs.io/en/latest/">twine</a>. It is very easy to use.</p>
 <p>To install twine, type the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">twine</span>
 </code></pre></div>
-
 <p>Once twine is installed, upload your package to PyPi by typing this command:</p>
 <div class="highlight"><pre><span></span><code><span class="n">twine</span> <span class="n">upload</span> <span class="n">dist</span><span class="o">/*</span>
 </code></pre></div>
-
 <p>This command will ask you for the username and password of your Pypi account.</p>
 <p>You can alternatively create a file called <a href="https://packaging.python.org/specifications/pypirc/">.pypirc</a> which contains
 your configuration and credentials and use this command to upload your package:</p>
 <div class="highlight"><pre><span></span><code><span class="n">twine</span> <span class="n">upload</span> <span class="o">--</span><span class="n">config</span><span class="o">-</span><span class="n">file</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">your</span><span class="o">/.</span><span class="n">pypirc</span><span class="o">&gt;</span> <span class="n">dist</span><span class="o">/*</span>
 </code></pre></div>
-
 <p>Once uploaded to PyPi, your package will be able to be installed by people by simply typing:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
 </code></pre></div>
-
 <p>You have now successfully uploaded your package to Pypi.
 This is great and now users can start to use your package!</p>
 <p>But if you want your package to be even more widely available and be able to be installed on all platforms even exotic ones,
 I advise you to also upload your package to <a href="https://conda-forge.org/">conda-forge</a>. This way your package will be also available on Anaconda.</p>
-<h2>CONDA-FORGE CONTRIBUTION:</h2>
+<p><br/></p>
+<h2 id="conda-forge-contribution">CONDA-FORGE CONTRIBUTION:</h2>
 <p>In order to upload your package to <a href="https://conda-forge.org/">conda-forge</a> see <a href="https://conda-forge.org/docs/maintainer/adding_pkgs.html">https://conda-forge.org/docs/maintainer/adding_pkgs.html</a> for more
 details.</p>
 <p>I will give a quick rundown of how to achieve this:</p>
@@ -270,33 +295,69 @@ details.</p>
 <div class="highlight"><pre><span></span><code><span class="n">mamba</span> <span class="n">install</span> <span class="n">grayskull</span>
 <span class="n">grayskull</span> <span class="n">pypi</span> <span class="o">&lt;</span><span class="n">your_package_name</span><span class="o">&gt;</span>
 </code></pre></div>
-
 <p>This will grab the latest version of your package from PyPi and auto-generate the recipe to create a conda package.</p>
 <p>Edit the file meta.yaml with the relevant information.</p>
 <p>Create a Pull Request to upload the recipe.</p>
-<p>After the Pull Request is merged, a new repository with your package is created at <a href="https://github.com/conda-forge/\">https://github.com/conda-forge/\</a></p>
+<p>After the Pull Request is merged, a new repository with your package is created at <a href="https://github.com/conda-forge/">https://github.com/conda-forge/</a></p>
 <p>You are now the maintainer of this repository.</p>
 <p>You can now update this repository, and the changes you make will be automatically updated to conda-forge.</p>
-<h2>CONDA-FORGE FEEDSTOCK MANAGEMENT:</h2>
+<p><br/></p>
+<h2 id="conda-forge-feedstock-management">CONDA-FORGE FEEDSTOCK MANAGEMENT:</h2>
 <p>In order to efficiently manage your new package repository follow these instructions.</p>
 <p>Optionally add a new remote:</p>
-<div class="highlight"><pre><span></span><code><span class="go">git checkout master</span>
-<span class="go">git remote add upstream https://github.com/conda-forge/&lt;feedstock&gt;</span>
-<span class="go">git fetch upstream</span>
-<span class="go">git checkout -b &lt;branch-name&gt;</span>
+<div class="highlight"><pre><span></span><code>git checkout master
+git remote add upstream https://github.com/conda-forge/&lt;feedstock&gt;
+git fetch upstream
+git checkout -b &lt;branch-name&gt;
 </code></pre></div>
-
 <p>Where feedstock is your package name and branch-name is a new git branch where you will make your changes.</p>
-<p>Make changes locally to the recipe and commit the changes:</p>
+<p>Make changes locally to the recipe and re-render the package:</p>
 <div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">smithy</span> <span class="n">rerender</span> <span class="o">-</span><span class="n">c</span> <span class="n">auto</span>
-
-<span class="p">:::</span><span class="n">console</span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="o">&lt;</span><span class="n">branch</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
 </code></pre></div>
-
+<p>Push your changes to the remote repository:</p>
+<div class="highlight"><pre><span></span><code>git push origin &lt;branch-name&gt;
+</code></pre></div>
 <p>Create a Pull Request on <a href="https://github.com/feedstock/\">https://github.com/feedstock/\</a>.</p>
 <p>Merge the Pull Request after all tests are successful.</p>
 <p>Your package is now available at <a href="https://anaconda.org/conda-forge/your-package-name\">https://anaconda.org/conda-forge/your-package-name\</a>.</p>
+<p><br/></p>
+<h2 id="conclusions">CONCLUSIONS:</h2>
+<p>You are now the proud creator and maintainer of a python package which can be used by almost anybody either through PyPi
+ or through conda-forge.</p>
+<p>However, as you could gather by reading through this tutorial, there are many steps involved in creating, building and releasing a Python package to a large audience,
+and for each of those manual steps there is a chance to make a mistake, and the whole process is time-consuming.</p>
+<p>Fortunately we are programmers, and programmers are lazy! (the good kind of laziness which leads to better automation).</p>
+<p>In the next part of this article I will provide a way to completely automate the whole process through a single push
+to your repository by using <a href="https://docs.github.com/en/actions">Github Actions</a> which will:</p>
+<ul>
+<li>
+<p>Build the package and run the test suite with code coverage on Windows, Linux and MacOs to ensure maximum compatibility   </p>
+</li>
+<li>
+<p>Generate the documentation and upload it to readthedocs.com  </p>
+</li>
+<li>
+<p>Analyze your package for security vulnerabilities  </p>
+</li>
+<li>
+<p>Upload the package to PyPI  </p>
+</li>
+<li>
+<p>Update the conda-forge recipe for your package  </p>
+</li>
+<li>
+<p>Upload your package to conda-forge</p>
+</li>
+</ul>
+<p>This automated process will greatly reduce the opportunities for error and is completely reproducible.
+It will also save a <strong>loads of time</strong> while maintaining your project and updating it regularly, either to add new features
+or to fix bugs.</p>
+<p>I hope I have whet your appetite for the next article in this series about Python packaging and distribution
+and that you enjoyed this article.</p>
+<p>Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions.
+Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.</p>
+<p>Enjoy!</p>
+<p><a href="https://sekoudiaonlp.github.io/">SekouDiaoNlp</a>.</p>
 
 
              
@@ -363,6 +424,9 @@ details.</p>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
             <time itemprop="dateCreated" datetime="2021-04-20T00:00:00+02:00">mar. 20 avril 2021</time>
+<h4>Last Updated</h4>
+<time datetime="2021-04-21T00:00:00+02:00">avr. 21, 2021</time>
+
             <h4>Category</h4>
             <a class="category-link" href="/categories.html#python-ref">Python</a>
             <h4>Tags</h4>
