@@ -64,7 +64,7 @@ THEME = 'C:/Users/user/Documents/Pelican_Themes/elegant-master'
 
 APPLAUSE_BUTTON = True
 
-ARTICLE_ORDER_BY = 'order'
+ARTICLE_ORDER_BY = 'reversed-date'
 PAGE_ORDER_BY = 'order'
 
 # Uncomment following line if you want document-relative URLs when developing
