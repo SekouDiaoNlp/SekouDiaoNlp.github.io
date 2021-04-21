@@ -20,6 +20,7 @@ However, the process of creating, building and publishing a python process might
 You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.
 
 In this tutorial I will explain how to do that in a detailed and easy to follow step-by-step procedure.
+
 <br />
 <br />
 
@@ -32,6 +33,7 @@ on the same projects as well as sharing your code with the world.
 You can download and install [git](https://git-scm.com/downloads) by clicking on the link and follow the installation instructions.
 
 Create an account on [GitHub](https://github.com/) by clicking on the link.
+
 <br />
 <br />
 
