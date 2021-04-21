@@ -1,99 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python, Natural Language Processing and AI technologies</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-04-21T00:00:00+02:00</updated><entry><title>Presentation of the python package mlconjug3</title><link href="/mlconjug3-presentation.html" rel="alternate"></link><published>2021-04-19T00:00:00+02:00</published><updated>2021-04-19T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-19:/mlconjug3-presentation.html</id><summary type="html">&lt;p&gt;Presentation of my NLP project mlconjug, a Python library for conjugating verbs in several languages.&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;I am making this post to present to the world my Python library which has the best AI (as far as I know)
-capable of conjugating verbs in several languages.&lt;/p&gt;
-&lt;p&gt;You can find below a summary of what it can achieve.&lt;/p&gt;
-&lt;h1 id="mlconjug3"&gt;MLCONJUG3&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://GitHub.com/SekouDiaoNlp/mlconjug3/graphs/commit-activity"&gt;&lt;img alt="Package Maintenance Status" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/&gt;&lt;/a&gt; &lt;a href="https://GitHub.com/SekouDiaoNlp/mlconjug3"&gt;&lt;img alt="Package Maintener" src="https://img.shields.io/badge/maintainer-SekouDiaoNlp-blue"/&gt;&lt;/a&gt; &lt;a href="https://github.com/SekouDiaoNlp/mlconjug3/actions"&gt;&lt;img alt="Build status on Windows, MacOs and Linux" src="https://github.com/SekouDiaoNlp/mlconjug3/workflows/mlconjug3/badge.svg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://pypi.python.org/pypi/mlconjug3"&gt;&lt;img alt="Pypi Python Package Index Status" src="https://img.shields.io/pypi/v/mlconjug3.svg"/&gt;&lt;/a&gt; &lt;a href="https://anaconda.org/conda-forge/mlconjug3"&gt;&lt;img alt="Anaconda Package Index Status" src="https://anaconda.org/conda-forge/mlconjug3/badges/version.svg"/&gt;&lt;/a&gt; &lt;a href="https://pypi.python.org/pypi/mlconjug3"&gt;&lt;img alt="Compatible Python versions" src="https://img.shields.io/pypi/pyversions/mlconjug3"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://mlconjug3.readthedocs.io/en/latest"&gt;&lt;img alt="Documentation Status" src="https://readthedocs.org/projects/mlconjug3/badge/?version=latest"/&gt;&lt;/a&gt; &lt;a href="https://pyup.io/repos/github/SekouDiaoNlp/mlconjug3/"&gt;&lt;img alt="Dependencies status" src="https://pyup.io/repos/github/SekouDiaoNlp/mlconjug3/shield.svg"/&gt;&lt;/a&gt; &lt;a href="https://codecov.io/gh/SekouDiaoNlp/mlconjug3"&gt;&lt;img alt="Code Coverage Status" src="https://codecov.io/gh/SekouDiaoNlp/mlconjug3/branch/master/graph/badge.svg"/&gt;&lt;/a&gt; &lt;a href="https://snyk.io/test/github/SekouDiaoNlp/mlconjug3?targetFile=requirements.txt"&gt;&lt;img alt="Code Vulnerability Status" src="https://snyk-widget.herokuapp.com/badge/pip/mlconjug3/badge.svg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://anaconda.org/conda-forge/mlconjug3"&gt;&lt;img alt="Supported platforms" src="https://img.shields.io/conda/pn/conda-forge/mlconjug3?color=dark%20green&amp;amp;label=Supported%20platforms"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A Python library to conjugate verbs in French, English, Spanish,
-Italian, Portuguese and Romanian (more soon) using Machine Learning
-techniques.&lt;/p&gt;
-&lt;p&gt;Any verb in one of the supported language can be conjugated, as the
-module contains a Machine Learning model of how the verbs behave.&lt;/p&gt;
-&lt;p&gt;Even completely new or made-up verbs can be successfully conjugated in
-this manner.&lt;/p&gt;
-&lt;p&gt;The supplied pre-trained models are composed of:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a binary feature extractor,&lt;/li&gt;
-&lt;li&gt;a feature selector using Linear Support Vector Classification,&lt;/li&gt;
-&lt;li&gt;a classifier using Stochastic Gradient Descent.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;mlconjug3 uses scikit-learn to implement the Machine Learning
-algorithms.&lt;/p&gt;
-&lt;p&gt;Users of the library can use any compatible classifiers from
-scikit-learn to modify and retrain the models.&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="academic-publications-citing-mlconjug"&gt;Academic publications citing mlconjug:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
-    Mitchell and Noah D. Goodman and Chris Piech.&lt;br/&gt;
-    "&lt;a href="https://arxiv.org/abs/1905.09916"&gt;Generative Grading Neural Approximate Parsing for Automated Student Feedback&lt;/a&gt;". &lt;br/&gt;
-    Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="software-projects-using-mlconjug"&gt;Software projects using mlconjug:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/GesaJo/Gender-Bias-Visualization"&gt;Gender Bias Visualization&lt;/a&gt;
-    This project offers tools to visualize the gender bias in
-    pre-trained language models to better understand the prejudices in
-    the data.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/lzontar/Text_Adaptation_To_Context"&gt;Text Adaptation To Context&lt;/a&gt; 
-    This project uses language models to generate text that is well
-    suited to the type of publication.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/samuel-karanja/facemask-derection"&gt;Facemask Detection&lt;/a&gt; 
-    This project offers a model which recognizes covid-19 masks.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/tyxchen/bad-excuses-for-zoom-abuses"&gt;Bad Excuses for Zoom Abuses&lt;/a&gt; 
-    Need an excuse for why you can't show up in your Zoom lectures? Just
-    generate one here!  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/pskshyam/NLP"&gt;NLP&lt;/a&gt; Repository to store
-    Natural Language Processing models.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/JeanExtreme002/Virtual-Assistant"&gt;Virtual Assistant&lt;/a&gt; 
-    This is a simple virtual assistant. With it, you can search the
-    Internet, access websites, open programs, and more using just your
-    voice. This virtual assistant supports the English and Portuguese
-    languages and has many settings that you can adjust to your liking.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/matthew-cheney/bad-advice"&gt;Bad Advice&lt;/a&gt; This
-    python module responds to yes or no questions. It dishes out its
-    advice at random. Disclaimer: Do not actually act on this advice
-    ;)  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/williammortimer/Spanish-Conjugations-Quiz"&gt;Spanish Conjugations Quiz&lt;/a&gt;
-    Python+Flask web app that uses mlconjug to dynamically generate
-    foreign language conjugation questions.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/FranchuFranchu/silver-rogue-df"&gt;Silver Rogue DF&lt;/a&gt;&lt;br/&gt;
-    A dwarf-fortress adventure mode-inspired rogue-like Pygame Python3
-    game&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="bibtex-citation"&gt;BibTeX citation:&lt;/h2&gt;
-&lt;p&gt;If you want to cite mlconjug3 in an academic publication use this
-citation format:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nc"&gt;@article&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;mlconjug3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
-      &lt;span class="na"&gt;title&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{mlconjug3}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
-      &lt;span class="na"&gt;author&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{Sekou Diao}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
-      &lt;span class="na"&gt;journal&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
-      &lt;span class="na"&gt;year&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{2020}&lt;/span&gt;  
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Python"></category><category term="Python"></category><category term="Machine Learning"></category><category term="Natural Language processing"></category><category term="AI"></category><category term="Conjugation"></category><category term="Linguistics"></category></entry><entry><title>How to create, build and publish a Python package</title><link href="/How-to-create-build-and-publish-a-Python-package.html" rel="alternate"></link><published>2021-04-20T00:00:00+02:00</published><updated>2021-04-21T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-20:/How-to-create-build-and-publish-a-Python-package.html</id><summary type="html">&lt;p&gt;A nifty tutorial about how to create build and publish a Python package.&lt;/p&gt;</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python, Natural Language Processing and AI technologies</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-04-21T00:00:00+02:00</updated><entry><title>How to create, build and publish a Python package</title><link href="/How-to-create-build-and-publish-a-Python-package.html" rel="alternate"></link><published>2021-04-20T00:00:00+02:00</published><updated>2021-04-21T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-20:/How-to-create-build-and-publish-a-Python-package.html</id><summary type="html">&lt;p&gt;A nifty tutorial about how to create build and publish a Python package.&lt;/p&gt;</summary><content type="html">
 &lt;h1 id="an-easy-step-by-step-guide-to-build-and-publish-python-packages"&gt;An easy step-by-step guide to build and publish Python packages.&lt;/h1&gt;
 &lt;p&gt;So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.&lt;/p&gt;
 &lt;p&gt;That's a great idea and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.&lt;/p&gt;
@@ -336,4 +242,98 @@ and that you enjoyed this article.&lt;/p&gt;
 &lt;p&gt;Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions.
 Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://sekoudiaonlp.github.io/"&gt;SekouDiaoNlp&lt;/a&gt;.&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Pypi"></category><category term="Anaconda"></category><category term="conda-forge"></category></entry></feed>
+&lt;p&gt;&lt;a href="https://sekoudiaonlp.github.io/"&gt;SekouDiaoNlp&lt;/a&gt;.&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Pypi"></category><category term="Anaconda"></category><category term="conda-forge"></category></entry><entry><title>Presentation of the python package mlconjug3</title><link href="/mlconjug3-presentation.html" rel="alternate"></link><published>2021-04-19T00:00:00+02:00</published><updated>2021-04-19T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-19:/mlconjug3-presentation.html</id><summary type="html">&lt;p&gt;Presentation of my NLP project mlconjug, a Python library for conjugating verbs in several languages.&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;I am making this post to present to the world my Python library which has the best AI (as far as I know)
+capable of conjugating verbs in several languages.&lt;/p&gt;
+&lt;p&gt;You can find below a summary of what it can achieve.&lt;/p&gt;
+&lt;h1 id="mlconjug3"&gt;MLCONJUG3&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://GitHub.com/SekouDiaoNlp/mlconjug3/graphs/commit-activity"&gt;&lt;img alt="Package Maintenance Status" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/&gt;&lt;/a&gt; &lt;a href="https://GitHub.com/SekouDiaoNlp/mlconjug3"&gt;&lt;img alt="Package Maintener" src="https://img.shields.io/badge/maintainer-SekouDiaoNlp-blue"/&gt;&lt;/a&gt; &lt;a href="https://github.com/SekouDiaoNlp/mlconjug3/actions"&gt;&lt;img alt="Build status on Windows, MacOs and Linux" src="https://github.com/SekouDiaoNlp/mlconjug3/workflows/mlconjug3/badge.svg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pypi.python.org/pypi/mlconjug3"&gt;&lt;img alt="Pypi Python Package Index Status" src="https://img.shields.io/pypi/v/mlconjug3.svg"/&gt;&lt;/a&gt; &lt;a href="https://anaconda.org/conda-forge/mlconjug3"&gt;&lt;img alt="Anaconda Package Index Status" src="https://anaconda.org/conda-forge/mlconjug3/badges/version.svg"/&gt;&lt;/a&gt; &lt;a href="https://pypi.python.org/pypi/mlconjug3"&gt;&lt;img alt="Compatible Python versions" src="https://img.shields.io/pypi/pyversions/mlconjug3"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://mlconjug3.readthedocs.io/en/latest"&gt;&lt;img alt="Documentation Status" src="https://readthedocs.org/projects/mlconjug3/badge/?version=latest"/&gt;&lt;/a&gt; &lt;a href="https://pyup.io/repos/github/SekouDiaoNlp/mlconjug3/"&gt;&lt;img alt="Dependencies status" src="https://pyup.io/repos/github/SekouDiaoNlp/mlconjug3/shield.svg"/&gt;&lt;/a&gt; &lt;a href="https://codecov.io/gh/SekouDiaoNlp/mlconjug3"&gt;&lt;img alt="Code Coverage Status" src="https://codecov.io/gh/SekouDiaoNlp/mlconjug3/branch/master/graph/badge.svg"/&gt;&lt;/a&gt; &lt;a href="https://snyk.io/test/github/SekouDiaoNlp/mlconjug3?targetFile=requirements.txt"&gt;&lt;img alt="Code Vulnerability Status" src="https://snyk-widget.herokuapp.com/badge/pip/mlconjug3/badge.svg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://anaconda.org/conda-forge/mlconjug3"&gt;&lt;img alt="Supported platforms" src="https://img.shields.io/conda/pn/conda-forge/mlconjug3?color=dark%20green&amp;amp;label=Supported%20platforms"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A Python library to conjugate verbs in French, English, Spanish,
+Italian, Portuguese and Romanian (more soon) using Machine Learning
+techniques.&lt;/p&gt;
+&lt;p&gt;Any verb in one of the supported language can be conjugated, as the
+module contains a Machine Learning model of how the verbs behave.&lt;/p&gt;
+&lt;p&gt;Even completely new or made-up verbs can be successfully conjugated in
+this manner.&lt;/p&gt;
+&lt;p&gt;The supplied pre-trained models are composed of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a binary feature extractor,&lt;/li&gt;
+&lt;li&gt;a feature selector using Linear Support Vector Classification,&lt;/li&gt;
+&lt;li&gt;a classifier using Stochastic Gradient Descent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;mlconjug3 uses scikit-learn to implement the Machine Learning
+algorithms.&lt;/p&gt;
+&lt;p&gt;Users of the library can use any compatible classifiers from
+scikit-learn to modify and retrain the models.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="academic-publications-citing-mlconjug"&gt;Academic publications citing mlconjug:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
+    Mitchell and Noah D. Goodman and Chris Piech.&lt;br/&gt;
+    "&lt;a href="https://arxiv.org/abs/1905.09916"&gt;Generative Grading Neural Approximate Parsing for Automated Student Feedback&lt;/a&gt;". &lt;br/&gt;
+    Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="software-projects-using-mlconjug"&gt;Software projects using mlconjug:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/GesaJo/Gender-Bias-Visualization"&gt;Gender Bias Visualization&lt;/a&gt;
+    This project offers tools to visualize the gender bias in
+    pre-trained language models to better understand the prejudices in
+    the data.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/lzontar/Text_Adaptation_To_Context"&gt;Text Adaptation To Context&lt;/a&gt; 
+    This project uses language models to generate text that is well
+    suited to the type of publication.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/samuel-karanja/facemask-derection"&gt;Facemask Detection&lt;/a&gt; 
+    This project offers a model which recognizes covid-19 masks.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/tyxchen/bad-excuses-for-zoom-abuses"&gt;Bad Excuses for Zoom Abuses&lt;/a&gt; 
+    Need an excuse for why you can't show up in your Zoom lectures? Just
+    generate one here!  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/pskshyam/NLP"&gt;NLP&lt;/a&gt; Repository to store
+    Natural Language Processing models.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/JeanExtreme002/Virtual-Assistant"&gt;Virtual Assistant&lt;/a&gt; 
+    This is a simple virtual assistant. With it, you can search the
+    Internet, access websites, open programs, and more using just your
+    voice. This virtual assistant supports the English and Portuguese
+    languages and has many settings that you can adjust to your liking.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/matthew-cheney/bad-advice"&gt;Bad Advice&lt;/a&gt; This
+    python module responds to yes or no questions. It dishes out its
+    advice at random. Disclaimer: Do not actually act on this advice
+    ;)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/williammortimer/Spanish-Conjugations-Quiz"&gt;Spanish Conjugations Quiz&lt;/a&gt;
+    Python+Flask web app that uses mlconjug to dynamically generate
+    foreign language conjugation questions.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/FranchuFranchu/silver-rogue-df"&gt;Silver Rogue DF&lt;/a&gt;&lt;br/&gt;
+    A dwarf-fortress adventure mode-inspired rogue-like Pygame Python3
+    game&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bibtex-citation"&gt;BibTeX citation:&lt;/h2&gt;
+&lt;p&gt;If you want to cite mlconjug3 in an academic publication use this
+citation format:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nc"&gt;@article&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;mlconjug3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
+      &lt;span class="na"&gt;title&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{mlconjug3}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
+      &lt;span class="na"&gt;author&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{Sekou Diao}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
+      &lt;span class="na"&gt;journal&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  
+      &lt;span class="na"&gt;year&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;{2020}&lt;/span&gt;  
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Python"></category><category term="Python"></category><category term="Machine Learning"></category><category term="Natural Language processing"></category><category term="AI"></category><category term="Conjugation"></category><category term="Linguistics"></category></entry></feed>
