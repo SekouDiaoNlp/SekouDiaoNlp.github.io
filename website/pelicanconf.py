@@ -40,11 +40,12 @@ AUTHOR_FEED_RSS = None
 PLUGIN_PATHS = ['C:/Users/user/Documents/Pelican_Plugins']
 PLUGINS = ['extract_toc']
 
-# MARKDOWN = {
-#     'extension_configs': {
-#         'markdown.extensions.toc': {}
-#     }
-# }
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.toc': {}
+    }
+}
 
 # MARKDOWN = (['toc'])
 
