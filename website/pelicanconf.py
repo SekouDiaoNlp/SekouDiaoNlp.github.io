@@ -38,7 +38,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 PLUGIN_PATHS = ['C:/Users/user/Documents/Pelican_Plugins']
-PLUGINS = ['extract_toc']
+PLUGINS = ['extract_toc', 'neighbors']
 
 MARKDOWN = {
     'extension_configs': {
