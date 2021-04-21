@@ -1,12 +1,15 @@
 Title: How to create, build and publish a Python package
 Category: Python
 Date: 2021-04-20
+Modified: 2021-04-21
 Tags: Python, Pypi, Anaconda, conda-forge
 Slug: How-to-create-build-and-publish-a-Python-package
 Author: SekouDiaoNlp
 Summary: A nifty tutorial about how to create build and publish a Python package.
 lang: en
 order: 002
+
+[TOC]
 
 # An easy step-by-step guide to build and publish Python packages.  
 
@@ -27,6 +30,7 @@ In this tutorial I will explain how to do that in a detailed and easy to follow 
 
 
 
+<br />
 
 ## INSTALL GIT AND CREATE A GITHUB ACCOUNT:  
 
@@ -42,6 +46,7 @@ Create an account on [GitHub](https://github.com/) by clicking on the link.
 
 
 
+<br />
 
 ## INSTALL A PYTHON DISTRIBUTION:  
 
@@ -86,6 +91,7 @@ For faster installation of conda packages use [mamba](https://github.com/mamba-o
 
 
 
+<br />
 
 ## CREATE THE BASE FOLDER STRUCTURE OF YOUR PROJECT:  
 
@@ -100,7 +106,7 @@ This is a command-line utility that creates projects from a Python package proje
 
 Then create your package structure by cloning a Cookiecutter project template:
 
-    :::console
+    :::
     git clone git@github.com:audreyr/cookiecutter-pypackage.git
 
 
@@ -130,6 +136,7 @@ It will be placed in your current directory. Find detailed information [here](ht
 
 
 
+<br />
 
 ## IT IS FINALLY TIME TO CODE 😎:  
 
@@ -138,6 +145,7 @@ You are now almost ready to code your awesome package. You just need to set up y
 
 
 
+<br />
 
 ### CREATE A NEW VIRTUAL ENVIRONMENT:  
 
@@ -178,6 +186,7 @@ You can find a helpful guide on how to do that [here](https://setuptools.readthe
 
 
 
+<br />
 
 ### ACTIVATE DEVELOPER MODE:  
 
@@ -195,6 +204,7 @@ type the following command:
 
 
 
+<br />
 
 ### START DEVELOPING YOUR CODE:  
 
@@ -224,6 +234,7 @@ You should put your tests in the 'test/' folder created by cookiecutter.
 
 
 
+<br />
 
 ### MANAGE DEPENDENCIES:  
 
@@ -231,7 +242,10 @@ You should put your tests in the 'test/' folder created by cookiecutter.
 In order to manage your dependencies I recommend to use [pip-upgrader](https://github.com/simion/pip-upgrader):
 It is a tool which allows you to automatically keep your dependencies up to date.
 
+Install pip-upgrader by typing:
 
+    :::python
+    pip install pip-upgrader
 
 First install the dependencies you specified by typing these commands:
 
@@ -261,6 +275,7 @@ After a while you will be ready to build and publish your package. That's great 
 
 
 
+<br />
 
 ## GENERATE DOCUMENTATION FROM THE DOCUMENTATION FOLDER:  
 
@@ -280,7 +295,7 @@ You can install it by typing:
 Once Sphinx is installed you can easily autogenerate the documentation for your project by navigating to the docs/ folder
 of your project and running:
 
-    :::console
+    :::
     make html
 
 
@@ -303,6 +318,7 @@ You are now ready to build your package.
 
 
 
+<br />
 
 ## BUILD THE PYTHON PACKAGE:  
 
@@ -342,6 +358,7 @@ Now It is time to distribute your package.
 
 
 
+<br />
 
 ## UPLOAD YOUR PYTHON PACKAGE:  
 
@@ -401,6 +418,7 @@ I advise you to also upload your package to [conda-forge](https://conda-forge.or
 
 
 
+<br />
 
 ## CONDA-FORGE CONTRIBUTION:  
 
@@ -446,7 +464,7 @@ Create a Pull Request to upload the recipe.
 
 
 
-After the Pull Request is merged, a new repository with your package is created at <https://github.com/conda-forge/\\>
+After the Pull Request is merged, a new repository with your package is created at <https://github.com/conda-forge/>
 
 
 
@@ -458,6 +476,7 @@ You can now update this repository, and the changes you make will be automatical
 
 
 
+<br />
 
 ## CONDA-FORGE FEEDSTOCK MANAGEMENT:  
 
@@ -468,7 +487,7 @@ In order to efficiently manage your new package repository follow these instruct
 
 Optionally add a new remote:
 
-    :::console
+    :::
     git checkout master
     git remote add upstream https://github.com/conda-forge/<feedstock>
     git fetch upstream
@@ -480,12 +499,14 @@ Where feedstock is your package name and branch-name is a new git branch where y
 
 
 
-Make changes locally to the recipe and commit the changes:
+Make changes locally to the recipe and re-render the package:
 
     :::python
-    conda smithy rerender -c auto
+    conda smithy rerender -c auto  
 
-    :::console
+Push your changes to the remote repository:
+
+    :::
     git push origin <branch-name>
 
 
@@ -499,3 +520,45 @@ Merge the Pull Request after all tests are successful.
 
 
 Your package is now available at <https://anaconda.org/conda-forge/your-package-name\\>.
+
+<br />
+
+## CONCLUSIONS:  
+
+ You are now the proud creator and maintainer of a python package which can be used by almost anybody either through PyPi
+ or through conda-forge.
+ 
+However, as you could gather by reading through this tutorial, there are many steps involved in creating, building and releasing a Python package to a large audience,
+and for each of those manual steps there is a chance to make a mistake, and the whole process is time-consuming.
+
+Fortunately we are programmers, and programmers are lazy! (the good kind of laziness which leads to better automation).
+
+In the next part of this article I will provide a way to completely automate the whole process through a single push
+to your repository by using [Github Actions](https://docs.github.com/en/actions) which will:
+
+- Build the package and run the test suite with code coverage on Windows, Linux and MacOs to ensure maximum compatibility   
+
+- Generate the documentation and upload it to readthedocs.com  
+
+- Analyze your package for security vulnerabilities  
+
+- Upload the package to PyPI  
+
+- Update the conda-forge recipe for your package  
+
+- Upload your package to conda-forge
+
+
+This automated process will greatly reduce the opportunities for error and is completely reproducible.
+It will also save a **loads of time** while maintaining your project and updating it regularly, either to add new features
+or to fix bugs.
+
+I hope I have whet your appetite for the next article in this series about Python packaging and distribution
+and that you enjoyed this article.
+
+Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions.
+Do not hesitate to make suggestions about how to improve it by making some steps clearer or more detailed.
+
+Enjoy!
+
+[SekouDiaoNlp](https://sekoudiaonlp.github.io/).
