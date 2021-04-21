@@ -32,7 +32,80 @@ this manner.&lt;/p&gt;
 algorithms.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Users of the library can use any compatible classifiers from
-scikit-learn to modify and retrain the models.&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Machine Learning"></category><category term="Natural Language processing"></category><category term="AI"></category><category term="Conjugation"></category><category term="Linguistics"></category></entry><entry><title>How to create, build and publish a Python package</title><link href="/How-to-create-build-and-publish-a-Python-package.html" rel="alternate"></link><published>2021-04-20T00:00:00+02:00</published><updated>2021-04-20T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-20:/How-to-create-build-and-publish-a-Python-package.html</id><summary type="html">&lt;p&gt;A nifty tutorial about how to create build and publish a Python package.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;An easy step-by-step guide to build and publish Python packages.&lt;/h1&gt;
+scikit-learn to modify and retrain the models.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Academic publications citing mlconjug&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
+    Mitchell and Noah D. Goodman and Chris Piech.&lt;br&gt;
+    "&lt;a href="https://arxiv.org/abs/1905.09916"&gt;Generative Grading Neural Approximate Parsing for Automated Student Feedback&lt;/a&gt;". &lt;br&gt;
+    Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Software projects using mlconjug&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/GesaJo/Gender-Bias-Visualization"&gt;Gender Bias Visualization&lt;/a&gt;
+    This project offers tools to visualize the gender bias in
+    pre-trained language models to better understand the prejudices in
+    the data.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/lzontar/Text_Adaptation_To_Context"&gt;Text Adaptation To Context&lt;/a&gt; 
+    This project uses language models to generate text that is well
+    suited to the type of publication.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/samuel-karanja/facemask-derection"&gt;Facemask Detection&lt;/a&gt; 
+    This project offers a model which recognizes covid-19 masks.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/tyxchen/bad-excuses-for-zoom-abuses"&gt;Bad Excuses for Zoom Abuses&lt;/a&gt; 
+    Need an excuse for why you can't show up in your Zoom lectures? Just
+    generate one here!  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/pskshyam/NLP"&gt;NLP&lt;/a&gt; Repository to store
+    Natural Language Processing models.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/JeanExtreme002/Virtual-Assistant"&gt;Virtual Assistant&lt;/a&gt; 
+    This is a simple virtual assistant. With it, you can search the
+    Internet, access websites, open programs, and more using just your
+    voice. This virtual assistant supports the English and Portuguese
+    languages and has many settings that you can adjust to your liking.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/matthew-cheney/bad-advice"&gt;Bad Advice&lt;/a&gt; This
+    python module responds to yes or no questions. It dishes out its
+    advice at random. Disclaimer: Do not actually act on this advice
+    ;)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/williammortimer/Spanish-Conjugations-Quiz"&gt;Spanish Conjugations Quiz&lt;/a&gt;
+    Python+Flask web app that uses mlconjug to dynamically generate
+    foreign language conjugation questions.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/FranchuFranchu/silver-rogue-df"&gt;Silver Rogue DF&lt;/a&gt;&lt;br&gt;
+    A dwarf-fortress adventure mode-inspired rogue-like Pygame Python3
+    game&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;BibTeX&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;If you want to cite mlconjug3 in an academic publication use this
+citation format:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;@article{mlconjug3,&lt;br&gt;
+      title={mlconjug3},&lt;br&gt;
+      author={Sekou Diao},&lt;br&gt;
+      journal={GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by},&lt;br&gt;
+      year={2020}&lt;br&gt;
+    }&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Machine Learning"></category><category term="Natural Language processing"></category><category term="AI"></category><category term="Conjugation"></category><category term="Linguistics"></category></entry><entry><title>How to create, build and publish a Python package</title><link href="/How-to-create-build-and-publish-a-Python-package.html" rel="alternate"></link><published>2021-04-20T00:00:00+02:00</published><updated>2021-04-20T00:00:00+02:00</updated><author><name>SekouDiaoNlp</name></author><id>tag:None,2021-04-20:/How-to-create-build-and-publish-a-Python-package.html</id><summary type="html">&lt;p&gt;A nifty tutorial about how to create build and publish a Python package.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;An easy step-by-step guide to build and publish Python packages.&lt;/h1&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
@@ -67,10 +140,14 @@ which can be a big hassle especially on Windows systems, or more exotic architec
 The Anaconda distributions comes in 2 flavors:&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The main distribution is &lt;a href="https://www.anaconda.com/products/individual#Downloads"&gt;Anaconda &lt;/a&gt; [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.&lt;br&gt;
- It takes time to download and install and takes a large amount of disk space (a few minutes and 3 GB),&lt;br&gt;
- But you won't need to install each of the packages you want to use individually.&lt;/li&gt;
-&lt;li&gt;The other distribution is &lt;a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html"&gt;Miniconda&lt;/a&gt;. It comes pre-bundled with just the core Python and a few packages.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The main distribution is &lt;a href="https://www.anaconda.com/products/individual#Downloads"&gt;Anaconda &lt;/a&gt; [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.&lt;br&gt;
+ It takes time to download and install and takes a large amount of disk space (a few minutes and 3 GB),
+ But you won't need to install each of the packages you want to use individually.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The other distribution is &lt;a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html"&gt;Miniconda&lt;/a&gt;. It comes pre-bundled with just the core Python and a few packages.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br /&gt;
 You can install your chosen distribution by clicking on their link and following the installation instructions provided on
@@ -223,7 +300,7 @@ That's great but wouldn't it be better if your documentation was automatically u
 &lt;p&gt;Create an account &lt;a href="https://readthedocs.org/"&gt;readthedocs&lt;/a&gt; and &lt;a href="https://docs.readthedocs.io/en/stable/intro/import-guide.html"&gt;follow their instructions&lt;/a&gt;
 on how to automatically upload your documentation to their site every time you release a new version of your package.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The documentation will be automatically available and always up to date at https://&lt;your-package-name&gt;.readthedocs.io/en/latest/index.html&lt;/p&gt;
+&lt;p&gt;The documentation will be automatically available and always up to date at https://your-package-name.readthedocs.io/en/latest/index.html&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;You are now ready to build your package.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
@@ -317,7 +394,7 @@ details.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Create a Pull Request to upload the recipe.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;After the Pull Request is merged, a new repository with your package is created at [https://github.com/conda-forge/\]&lt;/p&gt;
+&lt;p&gt;After the Pull Request is merged, a new repository with your package is created at &lt;a href="https://github.com/conda-forge/\"&gt;https://github.com/conda-forge/\&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;You are now the maintainer of this repository.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -336,7 +413,7 @@ details.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Where &lt;feedstock&gt; is your package name &lt;branch-name&gt; is a new git branch where you will make your changes.&lt;/p&gt;
+&lt;p&gt;Where feedstock is your package name and branch-name is a new git branch where you will make your changes.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Make changes locally to the recipe and commit the changes:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;conda&lt;/span&gt; &lt;span class="n"&gt;smithy&lt;/span&gt; &lt;span class="n"&gt;rerender&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="n"&gt;auto&lt;/span&gt;
@@ -346,8 +423,8 @@ details.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Create a Pull Request on [https://github.com/&lt;feedstock&gt;/\].&lt;/p&gt;
+&lt;p&gt;Create a Pull Request on &lt;a href="https://github.com/feedstock/\"&gt;https://github.com/feedstock/\&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Merge the Pull Request after all tests are successful.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Your package is now available at [https://anaconda.org/conda-forge/your-package-name\].&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Pypi"></category><category term="Anaconda"></category><category term="conda-forge"></category></entry></feed>
+&lt;p&gt;Your package is now available at &lt;a href="https://anaconda.org/conda-forge/your-package-name\"&gt;https://anaconda.org/conda-forge/your-package-name\&lt;/a&gt;.&lt;/p&gt;</content><category term="Python"></category><category term="Python"></category><category term="Pypi"></category><category term="Anaconda"></category><category term="conda-forge"></category></entry></feed>
