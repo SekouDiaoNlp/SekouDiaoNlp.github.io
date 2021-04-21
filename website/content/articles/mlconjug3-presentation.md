@@ -8,6 +8,8 @@ Summary: Presentation of my NLP project mlconjug, a Python library for conjugati
 lang: en
 order: 001
 
+[TOC]
+
 I am making this post to present to the world my Python library which has the best AI (as far as I know)
 capable of conjugating verbs in several languages.
 
