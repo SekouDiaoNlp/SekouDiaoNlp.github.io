@@ -295,7 +295,7 @@ on how to automatically upload your documentation to their site every time you r
 
 <br />
 
-The documentation will be automatically available and always up to date at https://<your-package-name>.readthedocs.io/en/latest/index.html
+The documentation will be automatically available and always up to date at https://your-package-name.readthedocs.io/en/latest/index.html
 
 <br />
 
@@ -446,7 +446,7 @@ Create a Pull Request to upload the recipe.
 
 <br />
 
-After the Pull Request is merged, a new repository with your package is created at [https://github.com/conda-forge/\\]
+After the Pull Request is merged, a new repository with your package is created at <https://github.com/conda-forge/\\>
 
 <br />
 
@@ -476,7 +476,7 @@ Optionally add a new remote:
 
 <br />
 
-Where <feedstock> is your package name <branch-name> is a new git branch where you will make your changes.
+Where feedstock is your package name and branch-name is a new git branch where you will make your changes.
 
 <br />
 
@@ -490,7 +490,7 @@ Make changes locally to the recipe and commit the changes:
 
 <br />
 
-Create a Pull Request on [https://github.com/<feedstock>/\\].
+Create a Pull Request on <https://github.com/feedstock/\\>.
 
 <br />
 
@@ -498,4 +498,4 @@ Merge the Pull Request after all tests are successful.
 
 <br />
 
-Your package is now available at [https://anaconda.org/conda-forge/your-package-name\\].
+Your package is now available at <https://anaconda.org/conda-forge/your-package-name\\>.
