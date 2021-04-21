@@ -134,12 +134,13 @@ citation format:
 
 <br />
 
-@article{mlconjug3,  
-      title={mlconjug3},  
-      author={Sekou Diao},  
-      journal={GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by},  
-      year={2020}  
-    }
+    :::bibtex
+    @article{mlconjug3,  
+          title={mlconjug3},  
+          author={Sekou Diao},  
+          journal={GitHub. Note: https://github.com/SekouDiaoNlp/mlconjug3 Cited by},  
+          year={2020}  
+        }
 
 
 
