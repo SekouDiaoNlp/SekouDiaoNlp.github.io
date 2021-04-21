@@ -11,9 +11,15 @@ order: 001
 I am making this post to present to the world my Python library which has the best AI (as far as I know)
 capable of conjugating verbs in several languages.
 
+<br />
+
 You can find below a summary of what it can achieve.
 
+<br />
+
 # MLCONJUG3
+
+<br />
 
 [![Package Maintenance Status]][1]  [![Package Maintener]][2]  [![Build status on Windows, MacOs and Linux]][3]
 
@@ -24,21 +30,37 @@ You can find below a summary of what it can achieve.
 [![Supported platforms]][5]
 
 
+<br />
+
 A Python library to conjugate verbs in French, English, Spanish,
 Italian, Portuguese and Romanian (more soon) using Machine Learning
-techniques.  
+techniques.
+
+<br />
+
 Any verb in one of the supported language can be conjugated, as the
-module contains a Machine Learning model of how the verbs behave.  
+module contains a Machine Learning model of how the verbs behave.
+
+<br />
+
 Even completely new or made-up verbs can be successfully conjugated in
-this manner.  
+this manner.
+
+<br />
+
 The supplied pre-trained models are composed of:
 
 -   a binary feature extractor,
 -   a feature selector using Linear Support Vector Classification,
 -   a classifier using Stochastic Gradient Descent.
 
+<br />
+
 mlconjug3 uses scikit-learn to implement the Machine Learning
-algorithms.  
+algorithms.
+
+<br />
+
 Users of the library can use any compatible classifiers from
 scikit-learn to modify and retrain the models.
 
