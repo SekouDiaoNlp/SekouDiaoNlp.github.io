@@ -60,8 +60,9 @@ The Anaconda distributions comes in 2 flavors:
 <br />
 
 - The main distribution is [Anaconda ](https://www.anaconda.com/products/individual#Downloads) [Miniconda]. It comes pre-bundled with over 1500 scientific packages automatically installed at once.  
- It takes time to download and install and takes a large amount of disk space (a few minutes and 3 GB),  
- But you won't need to install each of the packages you want to use individually.
+ It takes time to download and install and takes a large amount of disk space (a few minutes and 3 GB),
+ But you won't need to install each of the packages you want to use individually.  
+  
 - The other distribution is [Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html). It comes pre-bundled with just the core Python and a few packages.
 
 <br />
