@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'SekouDiaoNlp'
-SITENAME = 'SekouDiaoNlp'
+SITENAME = "SekouDiaoNlp's website. Python, Natural Language Processing and AI technologies."
 SITEURL = ''
 
 PATH = 'content'
