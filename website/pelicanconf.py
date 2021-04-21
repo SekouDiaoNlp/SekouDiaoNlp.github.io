@@ -6,7 +6,7 @@ SITENAME = 'SekouDiaoNlp'
 SITEURL = ''
 
 PATH = 'content'
-ARTICLE_PATHS = ['articles',]
+ARTICLE_PATHS = ['articles', ]
 
 TIMEZONE = 'Europe/Paris'
 
