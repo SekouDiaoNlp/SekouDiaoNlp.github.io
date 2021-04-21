@@ -9,7 +9,7 @@ PATH = 'content'
 ARTICLE_PATHS = ['articles', ]
 
 # Defines the landing page
-LANDING_PAGE_TITLE = "I use Python to develop Computational Linguistics and AI technologies."
+LANDING_PAGE_TITLE = "Using Python for Computational Linguistics and AI technologies."
 
 COMMENTBOX_PROJECT = '5690486803136512-proj'
 
