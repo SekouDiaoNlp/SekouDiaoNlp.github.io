@@ -1,10 +1,11 @@
 Title: Presentation of the python package mlconjug3
 Category: Python
 Date: 2021-04-19
+Modified: 2021-04-22
 Tags: Python, Machine Learning, Natural Language processing, AI, Conjugation, Linguistics
 Slug: mlconjug3-presentation
 Author: SekouDiaoNlp
-Summary: Presentation of my NLP project mlconjug, a Python library for conjugating verbs in several languages.
+Summary: Presentation of my NLP project mlconjug3, a Python library for conjugating verbs in several languages.
 lang: en
 order: 001
 
@@ -26,6 +27,8 @@ You can find below a summary of what it can achieve.
 [![Package Maintenance Status]][1]  [![Package Maintener]][2]  [![Build status on Windows, MacOs and Linux]][3]
 
 [![Pypi Python Package Index Status]][4]  [![Anaconda Package Index Status]][5]  [![Compatible Python versions]][4]
+
+[![PyPI Downloads]][10]  [![Conda]][2]
 
 [![Documentation Status]][6]  [![Dependencies status]][7]  [![Code Coverage Status]][8]  [![Code Vulnerability Status]][9]
 
@@ -87,6 +90,10 @@ scikit-learn to modify and retrain the models.
 
 
 
+-   [NLP-Suite](https://github.com/NLP-Suite/NLP-Suite) NLP Suite is
+    a package of tools designed for non-specialists, for scholars with
+    no knowledge or little knowledge of Natural Language Processing.  
+    
 -   [Gender Bias Visualization](https://github.com/GesaJo/Gender-Bias-Visualization)
     This project offers tools to visualize the gender bias in
     pre-trained language models to better understand the prejudices in
@@ -95,6 +102,26 @@ scikit-learn to modify and retrain the models.
 -   [Text Adaptation To Context](https://github.com/lzontar/Text_Adaptation_To_Context) 
     This project uses language models to generate text that is well
     suited to the type of publication.  
+    
+-   [verbecc-svc](https://pypi.org/project/verbecc/) Dockerized
+    microservice with REST API for conjugation of any verb in French and
+    Spanish.  
+    
+-   [nvhtml](https://pypi.org/project/nvhtml/) A tool to Manage and
+    tansform HTML documents.  
+    
+-   [twitter-bot](https://github.com/arthurcouyere/twitter-bot) 
+    Tweets the words of the French language. Largely inspired by the
+    @botducul (identical lexicon, but code in Python) and the
+    @botsupervnr. Posts on @botduslip. Stores the position of the last
+    tweeted word in a Redis database.  
+    
+-   [verb-form-helper](https://github.com/gittymutt/verb-form-helper)
+    This project offers a tool to help learn different verbal forms.  
+    
+-   [NLP Tasks](https://github.com/ai-systems/poly-nlp) A collection
+    of common NLP tasks such as dataset parsing and explicit semantic
+    extraction.  
     
 -   [Facemask Detection](https://github.com/samuel-karanja/facemask-derection) 
     This project offers a model which recognizes covid-19 masks.  
@@ -121,9 +148,9 @@ scikit-learn to modify and retrain the models.
     Python+Flask web app that uses mlconjug to dynamically generate
     foreign language conjugation questions.  
     
--   [Silver Rogue DF](https://github.com/FranchuFranchu/silver-rogue-df)  
+-   [Silver Rogue DF](https://github.com/FranchuFranchu/silver-rogue-df)
     A dwarf-fortress adventure mode-inspired rogue-like Pygame Python3
-    game
+    game.
 
 
 <br />
@@ -168,3 +195,7 @@ citation format:
   [8]: https://codecov.io/gh/SekouDiaoNlp/mlconjug3
   [Code Vulnerability Status]: https://snyk-widget.herokuapp.com/badge/pip/mlconjug3/badge.svg
   [9]: https://snyk.io/test/github/SekouDiaoNlp/mlconjug3?targetFile=requirements.txt
+  [PyPI Downloads]: https://img.shields.io/pypi/dm/mlconjug3?label=PyPi%20Downloads
+  [10]: https://pypi.python.org/pypi/mlconjug3
+  [Conda]: https://img.shields.io/conda/dn/conda-forge/mlconjug?label=Anaconda%20Total%20Downloads
+  [11]: https://anaconda.org/conda-forge/mlconjug3
