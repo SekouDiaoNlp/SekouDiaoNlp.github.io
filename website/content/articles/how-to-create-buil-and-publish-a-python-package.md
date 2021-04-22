@@ -223,7 +223,15 @@ The dependencies on the tools you use while developing your package can be speci
 
 You can find more information on the use of requirements files [here](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
 
+I advised adding replacing in your `setup.py` the list named 'requirements' by the following code to always keep in sync the requirements for your package
+specified in `setup.py` and those specified in `requirements.tx` in order to always have an up to date `setup.py`.
 
+    :::python
+    with open('requirements.txt') as f:
+        requirements = f.read().splitlines()
+
+This is necessary as the command `pip/conda install` doesn't check the `requirements.tx` file to install the dependencies,
+but the 'requirements' value in your `setup.py` file.
 
 I **STRONGLY** advise you to write tests and run them regularly. I recommend using [pytest](https://pytest.org/) to run your tests.
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.
