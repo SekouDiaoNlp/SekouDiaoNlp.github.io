@@ -63,6 +63,7 @@ LINKS = (('GitHub Profile', 'https://github.com/SekouDiaoNlp'),
 # Social widget
 SOCIAL = (('Github', 'https://github.com/SekouDiaoNlp', 'My Github repositories'),
           ('Reddit', 'https://www.reddit.com/user/BlackPythonGuru', 'My Reddit Profile'),
+          ('Twitter', 'https://twitter.com/DiaoNlp', 'My Twitter Profile'),
           )
 
 DEFAULT_PAGINATION = 10
