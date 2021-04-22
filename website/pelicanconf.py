@@ -5,6 +5,9 @@ AUTHOR = 'SekouDiaoNlp'
 SITENAME = "Python, Natural Language Processing and AI technologies"
 SITEURL = ''
 
+USE_SHORTCUT_ICONS = True
+STATIC_PATHS = ['theme/images', 'images']
+
 PATH = 'content'
 ARTICLE_PATHS = ['articles', ]
 
