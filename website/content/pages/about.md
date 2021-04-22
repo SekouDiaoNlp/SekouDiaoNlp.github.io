@@ -44,4 +44,9 @@ in my not so humble opinion 😎).
 
 If you click on their names you will get redirected to their greatest live performances.
 
+Apart from the normal NLP and AI stuff, I will occasionally make posts about great Blues artists and use NLP techniques
+to give insights about them through the analysis of their lyrics (like which themes they favor the most in their songs,
+sentiment analysis of their lyrics, the impact of the place they grew up on their lyrics,
+their place in the influence network of blues and rock artists, the grammatical and poetic complexity of their lyrics, etc...).
+
 [my_sweet_photo]: {static}/images/huwey_gravatar.jpg
