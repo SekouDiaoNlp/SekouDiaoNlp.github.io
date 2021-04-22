@@ -1,8 +1,8 @@
 Title: How to create, build and publish a Python package
 Category: Python
 Date: 2021-04-20
-Modified: 2021-04-21
-Tags: Python, Pypi, Anaconda, conda-forge
+Modified: 2021-04-22
+Tags: Python, Pypi, Anaconda, conda-forge, GitHub
 Slug: How-to-create-build-and-publish-a-Python-package
 Author: SekouDiaoNlp
 Summary: A nifty tutorial about how to create build and publish a Python package.
@@ -17,7 +17,7 @@ order: 002
 So you have a great idea to create a Python package that could be useful to many people, and you want to  make it available to the public.
 
 
-That's a great idea and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.
+That's a great project and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.
 
 
 However, the process of creating, building and publishing a python process might be tedious and time-consuming.
@@ -531,6 +531,7 @@ Your package is now available at <https://anaconda.org/conda-forge/your-package-
 However, as you could gather by reading through this tutorial, there are many steps involved in creating, building and releasing a Python package to a large audience,
 and for each of those manual steps there is a chance to make a mistake, and the whole process is time-consuming.
 
+
 Fortunately we are programmers, and programmers are lazy! (the good kind of laziness which leads to better automation).
 
 In the next part of this article I will provide a way to completely automate the whole process through a single push
@@ -553,7 +554,13 @@ This automated process will greatly reduce the opportunities for error and is co
 It will also save a **loads of time** while maintaining your project and updating it regularly, either to add new features
 or to fix bugs.
 
-I hope I have whet your appetite for the next article in this series about Python packaging and distribution
+This the same automated process I use to keep, for example, my package mlconjug3 on [PyPi](https://pypi.org/project/mlconjug3/)  and [Anaconda](https://anaconda.org/conda-forge/mlconjug3)
+in sync just by pushing my new features/bug fixes to my [GitHub repository](https://github.com/SekouDiaoNlp/mlconjug3).
+
+The GitHub actions I defined create a complete Continuous Integration and Delivery process that I have tested
+and used for a while with great satisfaction. As a bonus it freed a lot of my time to be able to focus more on the coding and R&D aspects of my projects.
+
+I hope I have whetted your appetite for the next article in this series about Python packaging and distribution
 and that you enjoyed this article.
 
 Let me know in the comments below if this article was useful and detailed enough for a beginner pythonista to be able to follow those instructions,
