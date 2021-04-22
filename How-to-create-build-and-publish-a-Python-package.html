@@ -215,6 +215,13 @@ type the following command:</p>
 <p>You can specify the dependencies that your package needs to run in a file called requirements.txt.</p>
 <p>The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.</p>
 <p>You can find more information on the use of requirements files <a href="https://pip.pypa.io/en/stable/user_guide/#requirements-files">here</a>.</p>
+<p>I advised adding replacing in your <code>setup.py</code> the list named 'requirements' by the following code to always keep in sync the requirements for your package
+specified in <code>setup.py</code> and those specified in <code>requirements.tx</code> in order to always have an up to date <code>setup.py</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'requirements.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">requirements</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+</code></pre></div>
+<p>This is necessary as the command <code>pip/conda install</code> doesn't check the <code>requirements.tx</code> file to install the dependencies,
+but the 'requirements' value in your <code>setup.py</code> file.</p>
 <p>I <strong>STRONGLY</strong> advise you to write tests and run them regularly. I recommend using <a href="https://pytest.org/">pytest</a> to run your tests.
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.</p>
 <p>You should put your tests in the 'test/' folder created by cookiecutter.</p>

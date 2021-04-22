@@ -89,6 +89,13 @@ type the following command:&lt;/p&gt;
 &lt;p&gt;You can specify the dependencies that your package needs to run in a file called requirements.txt.&lt;/p&gt;
 &lt;p&gt;The dependencies on the tools you use while developing your package can be specified in a file called requirements_dev.txt.&lt;/p&gt;
 &lt;p&gt;You can find more information on the use of requirements files &lt;a href="https://pip.pypa.io/en/stable/user_guide/#requirements-files"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I advised adding replacing in your &lt;code&gt;setup.py&lt;/code&gt; the list named 'requirements' by the following code to always keep in sync the requirements for your package
+specified in &lt;code&gt;setup.py&lt;/code&gt; and those specified in &lt;code&gt;requirements.tx&lt;/code&gt; in order to always have an up to date &lt;code&gt;setup.py&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'requirements.txt'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;requirements&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;splitlines&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is necessary as the command &lt;code&gt;pip/conda install&lt;/code&gt; doesn't check the &lt;code&gt;requirements.tx&lt;/code&gt; file to install the dependencies,
+but the 'requirements' value in your &lt;code&gt;setup.py&lt;/code&gt; file.&lt;/p&gt;
 &lt;p&gt;I &lt;strong&gt;STRONGLY&lt;/strong&gt; advise you to write tests and run them regularly. I recommend using &lt;a href="https://pytest.org/"&gt;pytest&lt;/a&gt; to run your tests.
 The dependency on pytest is specified in requirements_dev.txt as it is only used during development.&lt;/p&gt;
 &lt;p&gt;You should put your tests in the 'test/' folder created by cookiecutter.&lt;/p&gt;
