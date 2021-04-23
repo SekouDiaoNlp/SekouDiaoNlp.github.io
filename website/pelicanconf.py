@@ -30,6 +30,9 @@ PROJECTS = [{
     {'name': 'conda-forge',
      'url': 'https://github.com/conda-forge',
      'description': 'I am a member and contributor to the conda-forge organization.'},
+    {'name': 'Python Software Foundation',
+     'url': 'https://www.python.org/users/SekouDiaoNlp/',
+     'description': 'I am a member of the Python Software Foundation.'},
 ]
 
 TIMEZONE = 'Europe/Paris'
