@@ -1,0 +1,11 @@
+pelican content -o output -s publishconf.py
+
+cd output
+
+python -m pelican.server
+
+ghp-import -m "message" --no-jekyll -b master output
+
+checkout master and push
+
+checkout content and push
