@@ -80,7 +80,7 @@ scikit-learn to modify and retrain the models.
 
 -   Ali Malik and Mike Wu and Vrinda Vasavada and Jinpeng Song and John
     Mitchell and Noah D. Goodman and Chris Piech.  
-    "[Generative Grading: Near Human-level Accuracy for Automated Feedback on Richly Structured Problems](https://arxiv.org/abs/1905.09916)".   
+    ["Generative Grading: Near Human-level Accuracy for Automated Feedback on Richly Structured Problems"](https://arxiv.org/abs/1905.09916).   
     Proceedings of the 34th AAAI conference on Artificial Intelligence, 2019.
 
 
