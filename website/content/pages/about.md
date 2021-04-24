@@ -16,10 +16,26 @@ I am a Natural Language Processing and AI specialist.
 I studied Computer Science and Natural Language Processing at the University of Bordeaux,
 where I focused my academic interests in the Theoretical Linguistics field of Syntax called [Lexical Functional Grammar](https://scholar.google.fr/scholar?q=lexical+functional+grammar&hl=fr&as_sdt=0&as_vis=1&oi=scholart).
 
+I presented this Lexical Functional Grammar [paper](http://nlp.ipipan.waw.pl/HeadLex16/clement_sekou.pdf) at the HeadLex16
+conference at thePolish Academy of Sciences, Warsaw, Poland.
 
+    :::bibtex
+    @inproceedings{clement:hal-02489993,
+      TITLE = {{For a unified treatment of particle verbs (Headlex16)}},
+      AUTHOR = {Cl{\'e}ment, Lionel and Diao, Sekou},
+      URL = {https://hal.archives-ouvertes.fr/hal-02489993},
+      BOOKTITLE = {{Joint 2016 Conference on Head-driven Phrase Structure Grammar and Lexical Functional Grammar (Headlex16)}},
+      ADDRESS = {Varsovie, Poland},
+      YEAR = {2016},
+      MONTH = Jul,
+      PDF = {https://hal.archives-ouvertes.fr/hal-02489993/file/clement-sekou-3.pdf},
+      HAL_ID = {hal-02489993},
+      HAL_VERSION = {v1},
+    }
+
+However, I left Academia and am now working in the private sector.
 
 I am the author of multiple Open Source Python projects, notably mlconjug3,
-
 an AI system that knows how to conjugate verbs even made up ones or verbs coming from slang language in French, English,
 Spanish, Italian, Portuguese and Romanian.
 
