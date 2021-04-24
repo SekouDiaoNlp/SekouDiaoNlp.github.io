@@ -65,4 +65,6 @@ to give insights about them through the analysis of their lyrics (like which the
 sentiment analysis of their lyrics, the impact of the place they grew up on their lyrics,
 their place in the influence network of blues and rock artists, the grammatical and poetic complexity of their lyrics, etc...).
 
+You can contact me on my [Twitter account](https://twitter.com/DiaoNlp).
+
 [my_sweet_photo]: {static}/images/huwey_gravatar.jpg
