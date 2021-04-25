@@ -1,3 +1,6 @@
+
+# An easy step-by-step guide to build and publish GitHub Pages. 
+
     ``` python
     pelican content -o output -s publishconf.py
 
