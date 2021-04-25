@@ -1,36 +1,36 @@
 
 # An easy step-by-step guide to build and publish GitHub Pages. 
 
-    ``` python
+    ```python
     pelican content -o output -s publishconf.py
     ```
 
 
-    ``` console
+    ```console
     cd output
     ```
 
 
-    ``` python
+    ```python
     python -m pelican.server
     ```
 
 
-    ``` console
+    ```console
     cd..
     ```
 
 
-    ``` python
+    ```python
     ghp-import -m "message" --no-jekyll -b master output
     ```
 
 
-    :::python
+    ```console
     checkout master and push
     ```
 
 
-    ``` console
+    ```console
     checkout content and push
     ```
