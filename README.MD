@@ -1,20 +1,20 @@
-    :::python
+    ``` python
     pelican content -o output -s publishconf.py
 
-    :::python
+    ``` console
     cd output
 
-    :::python
+    ``` python
     python -m pelican.server
 
-    :::python
+    ``` console
     cd..
 
-    :::python
+    ``` python
     ghp-import -m "message" --no-jekyll -b master output
 
     :::python
     checkout master and push
 
-    :::python
+    ``` console
     checkout content and push
