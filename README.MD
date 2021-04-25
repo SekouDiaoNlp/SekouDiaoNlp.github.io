@@ -6,7 +6,7 @@
     ```
 
 
-    ```console
+    ```
     cd output
     ```
 
@@ -16,7 +16,7 @@
     ```
 
 
-    ```console
+    ```
     cd..
     ```
 
@@ -26,11 +26,11 @@
     ```
 
 
-    ```console
+    ```
     checkout master and push
     ```
 
 
-    ```console
+    ```
     checkout content and push
     ```
