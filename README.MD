@@ -8,6 +8,9 @@
     python -m pelican.server
 
     :::python
+    cd..
+
+    :::python
     ghp-import -m "message" --no-jekyll -b master output
 
     :::python
