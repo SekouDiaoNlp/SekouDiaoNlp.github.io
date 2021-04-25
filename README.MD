@@ -8,6 +8,7 @@
 
     ``` console
     cd output
+    ```
 
 
     ``` python
