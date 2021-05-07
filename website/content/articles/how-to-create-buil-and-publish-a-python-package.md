@@ -20,7 +20,7 @@ So you have a great idea to create a Python package that could be useful to many
 That's a great project and will allow you to share your work with the world and maybe achieve great success and create a community of users and contributors around your product.
 
 
-However, the process of creating, building and publishing a python process might be tedious and time-consuming.
+However, the process of creating, building and publishing a python project might be tedious and time-consuming.
 
 
 You can find the information about how to achieve this on the interwebz, but it requires a lot of google-fu, and the relevant information is scattered over many websites.
